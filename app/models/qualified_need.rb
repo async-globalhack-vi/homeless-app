@@ -1,4 +1,7 @@
 class QualifiedNeed < ActiveRecord::Base
+  has_one :user
+  has_many :assistance_providers
+  alias rejections assistance_providers
 
   acts_as_mappable :lat_column_name => :lat,
                    :lng_column_name => :lng,
