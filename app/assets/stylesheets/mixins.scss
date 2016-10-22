@@ -29,6 +29,7 @@
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: stretch;
+    z-index: 5;
     .actions {
         display: flex;
         padding: 1em;
