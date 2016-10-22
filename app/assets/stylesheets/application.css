@@ -12,5 +12,6 @@
  *
  *= require reset
  *= require global
+ *= require framework
  *= require_tree
  */
