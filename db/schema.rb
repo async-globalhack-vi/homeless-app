@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 20161022043421) do
     t.string  "event_type"
     t.string  "date_of_event"
     t.integer "user_id"
+    t.string  "resolution"
   end
 
   create_table "qualified_needs", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
