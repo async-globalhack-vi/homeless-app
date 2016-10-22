@@ -2,8 +2,8 @@
   %h1 Ruby Slippers
 
   %nav.flex
-    %button Log In
-    %button Register
+    %p
+      = current_user.email
     = link_to 'Logout', logout_path
 
 %section
