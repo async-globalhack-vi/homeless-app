@@ -3,7 +3,6 @@ class AssistanceProvidersController < ApplicationController
   end
 
   def create
-    byebug
     AssistanceProvider.create! data
   end
 
