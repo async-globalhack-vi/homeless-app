@@ -1,0 +1,41 @@
+[
+	{
+		"Court_Filing_Number" : "2016NV04676",
+  		"Defendant" : "James L. Thomaston",
+  		"Filing_Date" : "10/18/2016",
+  		"Filing_Type" : "Notice to Vacate",
+  		"Address1" : "400 South 4th Street",
+  		"Address2" : "#807",
+  		"City" : "Saint Louis",
+  		"State" : "MO",
+  		"Zip_Code" : "63102",
+  		"Plaintiff" : "Crown Properties LLC",
+  		"Server" : "Deputy Alan Morgan"
+	},
+	{
+		"Court_Filing_Number" : "2016NV04685",
+  		"Defendant" : "Dorothy Abernathy",
+  		"Filing_Date" : "10/18/2016",
+  		"Filing_Type" : "Notice to Vacate",
+  		"Address1" : "900 Spruce Street",
+  		"Address2" : "#701",
+  		"City" : "Saint Louis",
+  		"State" : "MO",
+  		"Zip_Code" : "63102",
+  		"Plaintiff" : "Acme Property Management, Inc.",
+  		"Server" : "Mr Paul Lincbax"
+	},
+	{
+		"Court_Filing_Number" : "2016FC04702",
+  		"Defendant" : "Don Jefferson",
+  		"Filing_Date" : "10/19/2016",
+  		"Filing_Type" : "Foreclosure",
+  		"Address1" : "1412 Washington Avenue",
+  		"Address2" : "",
+  		"City" : "Saint Louis",
+  		"State" : "MO",
+  		"Zip_Code" : "63102",
+  		"Plaintiff" : "Graham Lofts, Inc.",
+  		"Server" : "Deputy Adam Clennty"
+	}
+]
