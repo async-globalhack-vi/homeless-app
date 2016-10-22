@@ -18,6 +18,8 @@ class CreateAssistanceProvider < ActiveRecord::Migration[5.0]
       t.string :city
       t.string :state
       t.string :zip
+      t.float  :lat
+      t.float  :lng
       t.string :max_monthly_contribution
       t.integer :user_id
     end
@@ -27,9 +29,12 @@ class CreateAssistanceProvider < ActiveRecord::Migration[5.0]
       t.string :city
       t.string :state
       t.string :zip
+      t.float  :lat
+      t.float  :lng
       t.string :notes
       t.string :event_type
       t.string :date_of_event
+      t.integer :user_id
     end
 
     create_table :qualified_needs do |t|
@@ -41,6 +46,8 @@ class CreateAssistanceProvider < ActiveRecord::Migration[5.0]
       t.string :city
       t.string :state
       t.string :zip
+      t.float  :lat
+      t.float  :lng
     end
   end
 end
