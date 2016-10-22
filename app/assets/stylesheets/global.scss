@@ -2,18 +2,18 @@
 @import "//fonts.googleapis.com/css?family=Muli:300,400|Roboto:300,400,700";
 
 body {
-    // color: @grayDark;
     font-size: medium;
+    background-color: #ebebd3;
     // background: @bgColor;
-    /* @media (min-width: @bp-desk) {
+    @media (min-width: 1200px) {
         font-size: large;
     }
-    @media (min-width: @bp-wide) {
+    @media (min-width: 1600px) {
         font-size: larger;
     }
-    @media (min-width: @bp-superwide) {
+    @media (min-width: 2000px) {
         font-size: x-large;
-    } */
+    }
 }
 nav {
     font-family: 'Muli', sans-serif;
