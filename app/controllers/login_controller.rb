@@ -6,7 +6,8 @@ class LoginController < ApplicationController
 
   def create
     if user
-      redirect_to assistance_provider_dashboard_path
+      redirect_to assistance_provider_dashboard_path if user.assistance_provider?
+      redirect_to care_coordinator_dashboard_path if user.care_coordinator?
     else
       redirect_to login_index_path
     end
@@ -15,6 +16,6 @@ class LoginController < ApplicationController
   private
 
   def user
-    User.find_by(email: params[:email], password: params[:password])
+    @user ||= User.find_by(email: params[:email], password: params[:password])
   end
 end

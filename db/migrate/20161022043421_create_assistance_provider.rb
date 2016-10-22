@@ -5,6 +5,12 @@ class CreateAssistanceProvider < ActiveRecord::Migration[5.0]
       t.string :password
     end
 
+    create_table :care_coordinators do |t|
+      t.string :name
+      t.string :email
+      t.integer :user_id
+    end
+
     create_table :assistance_providers do |t|
       t.string :name
       t.string :email
