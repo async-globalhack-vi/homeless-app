@@ -1,31 +1,36 @@
-= link_to 'Logout', logout_path
+%header.flex
+  %h1 Ruby Slippers
 
-%h1 Care Coordinator Dashboard
+  %nav.flex
+    %p UserName
+    = link_to 'Logout', logout_path
 
-- unless @events.empty?
-  %table
-    %thead
-      %th Event type
-      %th Date of event
-      %th Street address
-      %th City
-      %th State
-      %th Zip
+%section
+  %h2 Care Coordinator Dashboard
 
-    - @events.each do |triggered_event|
-      %tr
-        %td
-          = triggered_event.event_type
-        %td
-          = triggered_event.date_of_event
-        %td
-          = triggered_event.street_address
-        %td
-          = triggered_event.city
-        %td
-          = triggered_event.state
-        %td
-          = triggered_event.zip
+  - unless @events.empty?
+    %table
+      %thead
+        %th Event type
+        %th Date of event
+        %th Street address
+        %th City
+        %th State
+        %th Zip
 
-%care-coordinator
+      - @events.each do |triggered_event|
+        %tr
+          %td
+            = triggered_event.event_type
+          %td
+            = triggered_event.date_of_event
+          %td
+            = triggered_event.street_address
+          %td
+            = triggered_event.city
+          %td
+            = triggered_event.state
+          %td
+            = triggered_event.zip
 
+  %care-coordinator
