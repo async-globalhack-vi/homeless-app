@@ -3,9 +3,9 @@ class EventsController < ApiController
 
   def index
     if show_only_users_events
-      render json: Event.where(user_id: current_user.id)
+      render json: Event.where(user_id: current_user.id, resolution: nil)
     else
-      render json: Event.where(user_id: nil)
+      render json: Event.where(user_id: nil, resolution: nil)
     end
   end
 

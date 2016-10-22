@@ -2,8 +2,10 @@
   %button{'ng-click' => 'showAll()'} All events
   %button{'ng-click' => 'showMine()'} My events
 
-  %div{'ng-if' => 'triggeredEvents.length == 0'}
-    No trigger events are in the system
+  %div{'ng-if' => 'triggeredEvents.length == 0 && allShowing'}
+    No events are in the system
+  %div{'ng-if' => 'triggeredEvents.length == 0 && !allShowing'}
+    You have no claimed events
 
   %div{'ng-if' => 'triggeredEvents && triggeredEvents.length > 0'}
     %table
