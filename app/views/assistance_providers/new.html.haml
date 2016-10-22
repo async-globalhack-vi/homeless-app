@@ -1,0 +1,37 @@
+= form_tag(action: 'create', method: 'post') do 
+  %fieldset
+    %p
+      = label_tag :email, 'Email'
+      = text_field_tag :email
+
+    %p
+      = label_tag :password, 'Password'
+      = password_field_tag :password
+
+  %fieldset
+    %p
+      = label_tag :name, 'Name/Organization name'
+      = text_field_tag :name
+
+    %p
+      = label_tag :street_address, 'Street address'
+      = text_field_tag :street_address
+
+    %p
+      = label_tag :city, 'City'
+      = text_field_tag :city
+
+    %p
+      = label_tag :state, 'State'
+      = text_field_tag :state
+
+    %p
+      = label_tag :zip, 'Zip'
+      = text_field_tag :zip
+
+    %p
+      = label_tag :max_monthly_contribution, 'Max monthly contribution'
+      = text_field_tag :max_monthly_contribution
+
+  = submit_tag 'Submit'
+
