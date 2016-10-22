@@ -17,7 +17,8 @@ RSpec.describe AssistanceProvider, :type => :model do
         expect(subject.distance_to(event1)).to be < 0.1
         expect(subject.distance_to(event2)).to be > 1.0
         expect(subject.distance_to(event2)).to be < 2.0
-        expect(subject.distance_to(event3)).to be > 5.0
+        expect(subject.distance_to(event3)).to be > 10.0
+        expect(subject.distance_to(event3)).to be < 12.0
       end
     end
   end
