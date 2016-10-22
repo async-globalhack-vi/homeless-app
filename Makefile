@@ -4,7 +4,6 @@ default: clean db start
 
 db: clean
 	@echo "seeding db..."
-	@bundle exec rake db:drop
 	@bundle exec rake db:create:all
 	@bundle exec rake db:migrate
 	@bundle exec rake db:seed
@@ -19,4 +18,5 @@ console:
 
 clean:
 	@echo "cleaning..."
+	@bundle exec rake db:drop
 
