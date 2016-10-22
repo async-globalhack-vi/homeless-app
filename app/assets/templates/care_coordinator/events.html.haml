@@ -1,21 +1,28 @@
-.triggered-events{'ng-if' => 'triggeredEvents && triggeredEvents.length > 0'}
-  %table
-    %thead
-      %th Event type
-      %th Date of event
-      %th Street address
-      %th City
-      %th State
-      %th Zip
-    %tbody
-      %tr{'ng-repeat' => 'triggeredEvent in triggeredEvents'}
-        %td {{ triggeredEvent.event_type }}
-        %td {{ triggeredEvent.date_of_event }}
-        %td {{ triggeredEvent.street_address }}
-        %td {{ triggeredEvent.city }}
-        %td {{ triggeredEvent.state }}
-        %td {{ triggeredEvent.zip }}
-        %td
-          %button{'ng-click' => 'claim(triggeredEvent.id)'}
-            Claim
+.triggered-events
+  %button{'ng-click' => 'showAll()'} All events
+  %button{'ng-click' => 'showMine()'} My events
+
+  %div{'ng-if' => 'triggeredEvents.length == 0'}
+    No trigger events are in the system
+
+  %div{'ng-if' => 'triggeredEvents && triggeredEvents.length > 0'}
+    %table
+      %thead
+        %th Event type
+        %th Date of event
+        %th Street address
+        %th City
+        %th State
+        %th Zip
+      %tbody
+        %tr{'ng-repeat' => 'triggeredEvent in triggeredEvents'}
+          %td {{ triggeredEvent.event_type }}
+          %td {{ triggeredEvent.date_of_event }}
+          %td {{ triggeredEvent.street_address }}
+          %td {{ triggeredEvent.city }}
+          %td {{ triggeredEvent.state }}
+          %td {{ triggeredEvent.zip }}
+          %td
+            %button{'ng-click' => 'claim(triggeredEvent.id)', 'ng-if' => 'allShowing'}
+              Claim
 

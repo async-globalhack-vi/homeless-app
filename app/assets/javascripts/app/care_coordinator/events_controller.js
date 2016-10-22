@@ -2,14 +2,38 @@
   angular.module('homeless').controller('eventsController', ['$scope', '$http', eventsController]);
 
   function eventsController($scope, $http) {
-    $http.get('/events').then(function(events) {
-      $scope.triggeredEvents = events.data;
-    });
+    $scope.allShowing = true;
+
+    $scope.showAll = function() {
+      $scope.allShowing = true;
+      refreshData();
+    }
+
+    $scope.showMine = function() {
+      $scope.allShowing = false;
+      refreshData();
+    }
+
+    function refreshData() {
+      $http.get(eventsUrl()).then(function(events) {
+        $scope.triggeredEvents = events.data;
+      });
+    }
+    refreshData();
 
     $scope.claim = function(eventId) {
-      console.log('event claimed: ' + eventId);
+      $http.put('/events/' + eventId).then(function() {
+        refreshData();
+      });
+    }
+
+    function eventsUrl() {
+      if ($scope.allShowing) {
+        return '/events'
+      } else {
+        return '/events?filter=true'
+      }
     }
   }
-
 })();
 

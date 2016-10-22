@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 20161022043421) do
   end
 
   create_table "events", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+<<<<<<< 25a2bbf57076fab6aacee5b6650963d9ee100b4a
     t.string "street_address"
     t.string "city"
     t.string "state"
@@ -41,6 +42,16 @@ ActiveRecord::Schema.define(version: 20161022043421) do
     t.string "notes"
     t.string "event_type"
     t.string "date_of_event"
+=======
+    t.string  "street_address"
+    t.string  "city"
+    t.string  "state"
+    t.string  "zip"
+    t.string  "notes"
+    t.string  "event_type"
+    t.string  "date_of_event"
+    t.integer "user_id"
+>>>>>>> adding ability to claim events
   end
 
   create_table "qualified_needs", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
