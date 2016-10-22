@@ -6,6 +6,8 @@ class QualifiedNeedsController < ApiController
   def create
     need = QualifiedNeed.new qualified_need_data
     assistance_provider = need.nearest_assistance_who_can_meet_need
+    puts "need is: #{need.inspect}"
+    puts "assistance_provider is: #{assistance_provider.inspect}"
     need.user_id = assistance_provider.user_id
     need.save!
     render nothing: true, status: 201
