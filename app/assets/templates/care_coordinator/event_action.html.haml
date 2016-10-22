@@ -1,0 +1,36 @@
+.ng-slide{'ng-if' => 'takingAction'}
+  %p
+    %button{'ng-click' => 'cancel()'} Cancel
+
+  %p
+    %label{for: :event_type_field}
+    %input{'id' => 'event_type_field', 'ng-model' => 'triggerEvent.eventType'}
+
+  %p
+    %label{for: :date_of_event_field}
+    %input{'id' => 'event_of_event_field', 'ng-model' => 'triggerEvent.date_of_event'}
+
+  %p
+    %label{for: :street_address_field}
+    %input{'id' => 'street_address_field', 'ng-model' => 'triggerEvent.street_address'}
+
+  %p
+    %label{for: :city_field}
+    %input{'id' => 'city_field', 'ng-model' => 'triggerEvent.city'}
+
+  %p
+    %label{for: :state_field}
+    %input{'id' => 'state_field', 'ng-model' => 'triggerEvent.state'}
+
+  %p
+    %label{for: :zip_field}
+    %input{'id' => 'zip_field', 'ng-model' => 'triggerEvent.zip'}
+
+  %p
+    %label{for: :notes_field}
+    %textarea{'id' => 'notes_field', 'ng-model' => 'triggerEvent.notes'}
+
+  %p
+    %button{'ng-click' => 'update()'} Update
+    %button{'ng-click' => 'eventResolved()'} Event resolved
+    %button{'ng-click' => 'createQualifiedNeed()'} Create qualified need
