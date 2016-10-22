@@ -1,21 +1,22 @@
 class LoginController < ApplicationController
   protect_from_forgery with: :exception
+  skip_before_filter :authenticate
 
   def index
   end
 
   def create
-    if user
-      redirect_to assistance_provider_dashboard_path if user.assistance_provider?
-      redirect_to care_coordinator_dashboard_path if user.care_coordinator?
+    if user = User.authenticate(params[:email], params[:password])
+      session[:current_user_id] = user.id
+      redirect_to home_index_path
     else
-      redirect_to login_index_path
+      @error = 'Failed to login'
+      render :index
     end
   end
 
-  private
-
-  def user
-    @user ||= User.find_by(email: params[:email], password: params[:password])
+  def destroy
+    @_current_user = session[:current_user_id] = nil
+    redirect_to home_index_path
   end
 end
