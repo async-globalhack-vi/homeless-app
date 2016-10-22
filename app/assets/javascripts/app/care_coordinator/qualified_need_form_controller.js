@@ -1,9 +1,12 @@
 (function() {
-  angular.module('homeless').controller('qualifiedNeedFormController', ['$scope', qualifiedNeedFormController]);
+  angular.module('homeless').controller('qualifiedNeedFormController', ['$scope', '$http', qualifiedNeedFormController]);
 
-  function qualifiedNeedFormController($scope) {
+  function qualifiedNeedFormController($scope, $http) {
     $scope.submit = function() {
-      console.log($scope.form);
+      $scope.showForm = false;
+      $http.post('/qualified_need', $scope.form).then(function() {
+        $scope.emit('refresh-qualified-needs');
+      });
     };
 
     $scope.cancel = function() {
