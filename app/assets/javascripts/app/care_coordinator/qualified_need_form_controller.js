@@ -4,8 +4,8 @@
   function qualifiedNeedFormController($scope, $http) {
     $scope.submit = function() {
       $scope.showForm = false;
-      $http.post('/qualified_need', $scope.form).then(function() {
-        $scope.emit('refresh-qualified-needs');
+      $http.post('/qualified_needs', $scope.form).then(function() {
+        $scope.$emit('refresh-qualified-needs');
       });
     };
 

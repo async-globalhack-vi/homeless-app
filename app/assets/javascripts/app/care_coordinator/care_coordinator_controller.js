@@ -10,10 +10,15 @@
       $scope.showForm = true;
     };
 
-    $scope.on('refresh-qualified-needs', function() {
-      $http.get('/qualified_need').then(function(needs) {
-        $scope.qualifiedNeeds = needs;
+    function refreshData() {
+      $http.get('/qualified_needs').then(function(needs) {
+        $scope.qualifiedNeeds = needs.data;
       });
+    }
+    refreshData();
+
+    $scope.$on('refresh-qualified-needs', function() {
+      refreshData();
     });
   }
 })();
