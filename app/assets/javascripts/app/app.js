@@ -1,5 +1,5 @@
 (function() {
-  angular.module('homeless', ['templates']);
+  angular.module('homeless', ['templates', 'ngAnimate']);
 
   angular.module('homeless').directive('foo', [fooDirective]);
 
