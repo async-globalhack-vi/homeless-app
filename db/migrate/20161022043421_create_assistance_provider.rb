@@ -15,5 +15,15 @@ class CreateAssistanceProvider < ActiveRecord::Migration[5.0]
       t.string :max_monthly_contribution
       t.integer :user_id
     end
+
+    create_table :events do |t|
+      t.string :street_address
+      t.string :city
+      t.string :state
+      t.string :zip
+      t.string :notes
+      t.string :event_type
+      t.string :date_of_event
+    end
   end
 end
