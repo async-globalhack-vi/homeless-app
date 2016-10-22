@@ -1,0 +1,37 @@
+.ng-slide{'ng-if' => 'showForm' }
+  %fieldset
+    %p
+      %label{for: :total_needed} Total needed
+      %input{id: :total_needed, 'ng-model' => 'form.totalNeeded'}
+
+    %p
+      %label{for: :poc_name} Point of Contact
+      %input{id: :poc_name, 'ng-model' => 'form.pointOfContact'}
+
+    %p
+      %label{for: :poc_phone} Phone
+      %input{id: :poc_phone, 'ng-model' => 'form.phone'}
+
+    %p
+      %label{for: :deadline} Deadline
+      %input{id: :deadline, 'ng-model' => 'form.deadline'}
+
+    %p
+      %label{for: :street_address} Street address
+      %input{id: :street_address, 'ng-model' => 'form.streetAddress'}
+
+    %p
+      %label{for: :city} City
+      %input{id: :city, 'ng-model' => 'form.city'}
+
+    %p
+      %label{for: :state} State
+      %input{id: :state, 'ng-model' => 'form.state'}
+
+    %p
+      %label{for: :zip} Zip
+      %input{id: :zip, 'ng-model' => 'form.zip'}
+
+  %button{'ng-click' => 'submit()'} Submit
+  %button{'ng-click' => 'cancel()'} Cancel
+
