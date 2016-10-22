@@ -1,16 +1,26 @@
-%h2 Login
+
+%header
+  %h1 Ruby Slippers
+
+  %nav
+    %button Log In
+    %button Register
+
+  %h2 This thing
+
+
 
 - if @error
-  %h3 
+  %h3
     = @error
 
-= form_tag(action: 'create', method: 'post') do 
-  %fieldset
-    %p
+= form_tag(action: 'create', method: 'post') do
+  %div.login
+    %div
       = label_tag :email, 'Email'
       = text_field_tag :email
 
-    %p
+    %div
       = label_tag :password, 'Password'
       = password_field_tag :password
 
@@ -20,4 +30,9 @@
   = link_to 'Register as an assistance provider', new_assistance_provider_path
 %p
   = link_to 'Register as a care coordinator', new_care_coordinator_path
+
+
+#content
+  .title
+    %p this is the way to do it
 
