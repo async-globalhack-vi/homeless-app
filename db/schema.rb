@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 20161022043421) do
     t.string  "city"
     t.string  "state"
     t.string  "zip"
+    t.float   "lat",                      limit: 24
+    t.float   "lng",                      limit: 24
     t.string  "max_monthly_contribution"
     t.integer "user_id"
   end
@@ -34,6 +36,8 @@ ActiveRecord::Schema.define(version: 20161022043421) do
     t.string "city"
     t.string "state"
     t.string "zip"
+    t.float  "lat",            limit: 24
+    t.float  "lng",            limit: 24
     t.string "notes"
     t.string "event_type"
     t.string "date_of_event"
@@ -48,6 +52,8 @@ ActiveRecord::Schema.define(version: 20161022043421) do
     t.string "city"
     t.string "state"
     t.string "zip"
+    t.float  "lat",              limit: 24
+    t.float  "lng",              limit: 24
   end
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
