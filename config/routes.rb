@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   post '/login', to: 'login#create', as: 'login'
   get '/logout', to: 'login#destroy', as: 'logout'
 
-  resources :events, only: [:index, :create, :update]
+  resources :events, only: [:index, :create, :update, :show]
 
   get '/assistance_provider_dashboard', to: 'assistance_provider_dashboard#index'
   get '/care_coordinator_dashboard', to: 'care_coordinator_dashboard#index'

@@ -14,6 +14,10 @@
       refreshData();
     }
 
+    $scope.takeAction = function(eventId) {
+      $scope.$emit('showEventAction', {eventId: eventId});
+    }
+
     function refreshData() {
       $http.get(eventsUrl()).then(function(events) {
         $scope.triggeredEvents = events.data;
