@@ -6,6 +6,19 @@
       = current_user.email
     = link_to 'Logout', logout_path
 
-%section
-  %h2 Assistance Provider Dashboard
+- if !@qualified_need
+  %h4 You have not qualified needs at this time. Please check back later.
+- if @qualified_need
+  %section
+    %h2 Assistance Provider Dashboard
 
+    %h3 Total need
+    = @qualified_need.total_needed
+
+    %h4 Deadline
+    = @qualified_need.deadline
+
+    %p
+      = link_to 'Pledge!', pledge_path(@qualified_need.id)
+    %p
+      = link_to 'Not this time...', reject_path(@qualified_need.id)

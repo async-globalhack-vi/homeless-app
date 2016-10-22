@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20161022043421) do
     t.float   "lng",                      limit: 24
     t.string  "max_monthly_contribution"
     t.integer "user_id"
+    t.integer "qualified_need_id"
   end
 
   create_table "care_coordinators", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -46,16 +47,17 @@ ActiveRecord::Schema.define(version: 20161022043421) do
   end
 
   create_table "qualified_needs", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string "total_needed"
-    t.string "point_of_contact"
-    t.string "phone"
-    t.string "deadline"
-    t.string "street_address"
-    t.string "city"
-    t.string "state"
-    t.string "zip"
-    t.float  "lat",              limit: 24
-    t.float  "lng",              limit: 24
+    t.string  "total_needed"
+    t.string  "point_of_contact"
+    t.string  "phone"
+    t.string  "deadline"
+    t.string  "street_address"
+    t.string  "city"
+    t.string  "state"
+    t.string  "zip"
+    t.float   "lat",              limit: 24
+    t.float   "lng",              limit: 24
+    t.integer "user_id"
   end
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
