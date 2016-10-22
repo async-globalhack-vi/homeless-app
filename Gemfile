@@ -12,6 +12,8 @@ gem 'haml-rails', '~> 0.9'
 gem 'angularjs-rails', '~> 1.5'
 gem 'angular-rails-templates', '~> 1.0'
 
+gem 'bcrypt', '~> 3.1'
+
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
