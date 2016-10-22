@@ -1,4 +1,8 @@
 class EventsController < ApiController
+  def index
+    render json: Event.all
+  end
+
   def create
     Event.create! event_data
     render nothing: true, status: 201

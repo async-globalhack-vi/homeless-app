@@ -1,0 +1,23 @@
+.qualified-needs
+  %button{'ng-click' => 'addQualifiedNeed()'} Add qualified need
+  %table{'ng-if' => 'qualifiedNeeds && qualifiedNeeds.length > 0'}
+    %thead
+      %th Total needed
+      %th Point of Contact
+      %th Phone
+      %th Deadline
+      %th Street address
+      %th City
+      %th State
+      %th Zip
+    %tr{'ng-repeat' => 'qualifiedNeed in qualifiedNeeds'}
+      %td {{ qualifiedNeed.total_needed }}
+      %td {{ qualifiedNeed.point_of_contact }}
+      %td {{ qualifiedNeed.phone }}
+      %td {{ qualifiedNeed.deadline }}
+      %td {{ qualifiedNeed.street_address }}
+      %td {{ qualifiedNeed.city }}
+      %td {{ qualifiedNeed.state }}
+      %td {{ qualifiedNeed.zip }}
+  %qualified-need-form
+
