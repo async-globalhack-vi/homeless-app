@@ -6,8 +6,9 @@ class AssistanceProvidersController < ApplicationController
 
   def create
     user = User.create! user_data
-    AssistanceProvider.create! data.merge(user_id: user.id)
+    @temp = AssistanceProvider.create! data.merge(user_id: user.id)
     session[:current_user_id] = user.id
+    UserMailer.need_email(@temp).deliver_later
   end
 
   private
