@@ -1,10 +1,21 @@
 Vulnerable household, assistance needed
 
-A situation has come up, and a household is in emminent danger
-of losing their home and shelter and becoming homeless.
+  A situation has come up, and a household is in emminent danger
+  of losing thier home and shelter and becoming homeless.
 
-This houshold is in your immediate neighborhood, and
-<%= @assistance_provider.name %> is the nearest partner that may
-be able to help. <%= @assistance_provider.name %> is the only
-one this request is going to. You are the first line of defense to
-stop this household from become homeless.
+  This houshold is in your immediate neighborhood, and
+  <%= @assistance_provider.name %> is the nearest partner that may
+  be able to help. <%= @assistance_provider.name %> is the only
+  one this request is going to. You are the first line of defense to
+  stop this household from become homeless.
+
+Details:
+
+  A one-time assistance of $<%= @qualified_need.total_needed %>
+  is needed to keep this household in their home, and it is needed
+  by <%= @qualified_need.deadline %>
+
+  Whether you can help or not, please call
+  <%= @qualified_need.point_of_contact %> at <%= @qualified_need.phone %>
+  as soon as possible so that this household has the best chance of 
+  avoiding homelessness.

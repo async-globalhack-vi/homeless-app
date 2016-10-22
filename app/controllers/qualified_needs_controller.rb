@@ -10,6 +10,7 @@ class QualifiedNeedsController < ApiController
     puts "assistance_provider is: #{assistance_provider.inspect}"
     need.user_id = assistance_provider.user_id
     need.save!
+    UserMailer.need_email(assistance_provider, need).deliver_later
     render nothing: true, status: 201
   end
 
