@@ -5,4 +5,6 @@ require_relative 'config/application'
 
 Rails.application.load_tasks
 
-task :boot => ['db:drop', 'db:create', 'db:migrate']
+task :boot => ['db:drop', 'db:create', 'db:migrate'] do
+  `rails s`
+end
