@@ -1,8 +1,8 @@
 class QualifiedNeed < ActiveRecord::Base
 
   acts_as_mappable :lat_column_name => :lat,
-                   :lng_column_name => :lng
-                   # :auto_geocode=>{:field=>:address, :error_message=>'Could not geocode address'}
+                   :lng_column_name => :lng,
+                   :auto_geocode=>{:field=>:address, :error_message=>'Could not geocode address'}
 
   def address
     "#{street_address}, #{city}, #{state}, #{zip}"
@@ -23,7 +23,6 @@ class QualifiedNeed < ActiveRecord::Base
   end
 
   def can_meet_need(assistance_provider)
-    puts "assistance_provider with id: #{assistance_provider.id} has max of: #{assistance_provider.max_monthly_contribution} and we need #{self.total_needed}..."
     self.total_needed < assistance_provider.max_monthly_contribution
   end
 end
