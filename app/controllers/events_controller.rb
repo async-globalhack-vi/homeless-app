@@ -14,7 +14,7 @@ class EventsController < ApiController
   end
 
   def update
-    Event.find(event_id).update_attributes user_id: current_user.id
+    Event.find(event_id).update_attributes user_id: current_user.id, resolution: resolution
   end
 
   def create
@@ -26,6 +26,10 @@ class EventsController < ApiController
 
   def event_id
     params[:id]
+  end
+
+  def resolution
+    params[:resolution]
   end
 
   def event_data

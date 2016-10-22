@@ -9,8 +9,15 @@
       });
     });
 
-    $scope.cancel = function() {
+    $scope.cancelEventAction = function() {
       $scope.takingAction = false;
+    };
+
+    $scope.eventResolved = function() {
+      $http.put('/events/' + $scope.triggerEvent.id, {resolution: 'no-action'})
+        .then(function() {
+          $scope.takingAction = false;
+      });
     };
 
     $scope.update = function() {
@@ -19,8 +26,11 @@
     };
 
     $scope.createQualifiedNeed = function() {
-      console.log('create qualified need');
-      $scope.takingAction = false;
+      $http.put('/events/' + $scope.triggerEvent.id, {resolution: 'qualified-need-created'})
+        .then(function() {
+          $scope.takingAction = false;
+          $scope.$emit('show-add-qualified-need-form', $scope.triggerEvent);
+      });
     };
   }
 })();
