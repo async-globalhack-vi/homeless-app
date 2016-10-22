@@ -39,6 +39,17 @@ ActiveRecord::Schema.define(version: 20161022043421) do
     t.string "date_of_event"
   end
 
+  create_table "qualified_needs", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "total_needed"
+    t.string "point_of_contact"
+    t.string "phone"
+    t.string "deadline"
+    t.string "street_address"
+    t.string "city"
+    t.string "state"
+    t.string "zip"
+  end
+
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "email"
     t.string "password_hash"

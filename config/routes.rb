@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  resources :home
+  resources :home, only: :index
   resource :assistance_provider
   resource :care_coordinator
+
+  resources :qualified_needs, only: [:index, :create]
 
   get '/login', to: 'login#index', as: 'new_login'
   post '/login', to: 'login#create', as: 'login'
