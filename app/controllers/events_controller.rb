@@ -1,5 +1,5 @@
 class EventsController < ApiController
-  before_filter :ensure_user_is_care_coordinator, only: [:index, :update]
+  before_filter :ensure_user_is_care_coordinator, only: [:index, :update, :show]
 
   def index
     if show_only_users_events
@@ -7,6 +7,10 @@ class EventsController < ApiController
     else
       render json: Event.where(user_id: nil)
     end
+  end
+
+  def show
+    render json: Event.find(event_id)
   end
 
   def update
