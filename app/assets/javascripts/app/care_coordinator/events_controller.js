@@ -26,7 +26,7 @@
     refreshData();
 
     $scope.claim = function(eventId) {
-      $http.put('/events/' + eventId).then(function() {
+      $http.put('/events/' + eventId, {resolution: null}).then(function() {
         refreshData();
       });
     }

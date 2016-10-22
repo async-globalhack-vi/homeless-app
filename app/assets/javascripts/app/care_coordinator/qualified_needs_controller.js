@@ -4,8 +4,7 @@
   function qualifiedNeedsController($scope, $http) {
     $scope.showForm = false;
     $scope.addQualifiedNeed = function() {
-      $scope.form = {};
-      $scope.showForm = true;
+      $scope.$emit('show-add-qualified-need-form', {});
     };
 
     function refreshData() {

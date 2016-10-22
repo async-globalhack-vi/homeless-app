@@ -1,8 +1,5 @@
 .ng-slide.slider{'ng-if' => 'takingAction'}
   %p
-    %button{'ng-click' => 'cancel()'} Cancel
-
-  %p
     %label{for: :event_type_field} Event type
     %input{'id' => 'event_type_field', 'ng-model' => 'triggerEvent.eventType'}
 
@@ -31,6 +28,7 @@
     %textarea{'id' => 'notes_field', 'ng-model' => 'triggerEvent.notes'}
 
   %p
+    %button{'ng-click' => 'cancelEventAction()'} Cancel
     %button{'ng-click' => 'update()'} Update
     %button{'ng-click' => 'eventResolved()'} Event resolved
     %button{'ng-click' => 'createQualifiedNeed()'} Create qualified need

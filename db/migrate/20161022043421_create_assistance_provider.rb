@@ -35,6 +35,7 @@ class CreateAssistanceProvider < ActiveRecord::Migration[5.0]
       t.string :event_type
       t.string :date_of_event
       t.integer :user_id
+      t.string :resolution
     end
 
     create_table :qualified_needs do |t|
