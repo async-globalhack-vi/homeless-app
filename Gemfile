@@ -32,4 +32,9 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
+group :development, :test do
+  gem 'rspec-rails', '~> 3.5'
+  gem 'factory_girl_rails'
+end
+
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
