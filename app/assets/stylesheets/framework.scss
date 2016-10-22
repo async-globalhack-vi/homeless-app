@@ -18,21 +18,30 @@ nav {
 }
 table {
     width: 100%;
-    background-color: #fef;
 }
-tr {
-    &:nth-child(even) {
-        background-color: #efe;
+tbody {
+    tr {
+        &:nth-child(odd) {
+            background-color: #fef;
+        }
+        &:nth-child(even) {
+            background-color: #efe;
+        }
     }
 }
 th,
 td {
     text-align: left;
-    padding: 1em;
+    padding: 1rem;
 }
 th {
-    background-color: #efe;
+    font-size: 0.8em;
+    padding: 0.25rem 1rem;
 }
 td {
     border-top: 1px solid #657;
+    &.type {
+        text-transform: capitalize;
+        font-weight: 400;
+    }
 }

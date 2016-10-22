@@ -8,16 +8,16 @@
   %div{'ng-if' => 'triggeredEvents && triggeredEvents.length > 0'}
     %table
       %thead
-        %th Event type
-        %th Date of event
-        %th Street address
+        %th.type Event
+        %th Date
+        %th Address
         %th City
         %th State
         %th Zip
         %th
       %tbody
         %tr{'ng-repeat' => 'triggeredEvent in triggeredEvents'}
-          %td {{ triggeredEvent.event_type }}
+          %td.type {{ triggeredEvent.event_type }}
           %td {{ triggeredEvent.date_of_event }}
           %td {{ triggeredEvent.street_address }}
           %td {{ triggeredEvent.city }}
