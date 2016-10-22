@@ -18,10 +18,21 @@ nav {
 }
 table {
     width: 100%;
+    background-color: #fef;
 }
 tr {
-
+    &:nth-child(even) {
+        background-color: #efe;
+    }
+}
+th,
+td {
+    text-align: left;
+    padding: 1em;
+}
+th {
+    background-color: #efe;
 }
 td {
-
+    border-top: 1px solid #657;
 }
