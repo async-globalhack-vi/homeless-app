@@ -23,6 +23,12 @@ ActiveRecord::Schema.define(version: 20161022043421) do
     t.integer "user_id"
   end
 
+  create_table "care_coordinators", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string  "name"
+    t.string  "email"
+    t.integer "user_id"
+  end
+
   create_table "events", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "street_address"
     t.string "city"

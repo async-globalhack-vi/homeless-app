@@ -1,5 +1,9 @@
 %h2 Login
 
+- if @error
+  %h3 
+    = @error
+
 = form_tag(action: 'create', method: 'post') do 
   %fieldset
     %p
@@ -12,5 +16,8 @@
 
   = submit_tag 'Login'
 
-  = link_to 'Register', new_assistance_provider_path
+%p
+  = link_to 'Register as an assistance provider', new_assistance_provider_path
+%p
+  = link_to 'Register as a care coordinator', new_care_coordinator_path
 

@@ -1,4 +1,4 @@
-class AssistanceProvidersController < ApplicationController
+class CareCoordinatorsController < ApplicationController
   skip_before_filter :authenticate
 
   def new
@@ -6,7 +6,7 @@ class AssistanceProvidersController < ApplicationController
 
   def create
     user = User.create! user_data
-    AssistanceProvider.create! data.merge(user_id: user.id)
+    CareCoordinator.create! data.merge(user_id: user.id)
     session[:current_user_id] = user.id
   end
 
@@ -17,6 +17,6 @@ class AssistanceProvidersController < ApplicationController
   end
 
   def data
-    params.permit :name, :email, :street_address, :city, :state, :zip, :max_monthly_contribution
+    params.permit :name, :email
   end
 end
