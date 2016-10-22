@@ -16,6 +16,10 @@ console:
 	@echo "starting console..."
 	@bundle exec rails console
 
+test:
+	@echo "testing with rspec..."
+	@bundle exec rspec
+
 clean:
 	@echo "cleaning..."
 	@bundle exec rake db:drop
