@@ -15,5 +15,6 @@
  *= require global
  *= require animation
  *= require framework
+ *= require login
  *= require_tree
  */

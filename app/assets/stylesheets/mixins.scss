@@ -23,6 +23,36 @@
     top: 0;
     right: 0;
     bottom: 0;
+    width: 40vw;
+    padding: 6rem 2rem 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: stretch;
+    z-index: 5;
+    .actions {
+        display: flex;
+        padding: 1em;
+        padding-bottom: 3em;
+        flex-wrap: nowrap;
+        justify-content: center;
+        > * {
+            + * {
+                margin-left: 1em;
+            }
+        }
+    }
+}
+.input-group {
+    flex: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: stretch;
+    input {
+        font-size: 1.1em;
+        padding: 0.25em;
+    }
 }
 // for links
 /* .underline(@color: @colorLink) {
