@@ -1,0 +1,68 @@
+
+$transitionTime: 200ms;
+
+@mixin transition($property: all, $duration: $transitionTime, $function: ease-in-out) {
+    transition: $property $duration $function;
+}
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.animated.infinite {
+    animation-iteration-count: infinite;
+}
+.ng-drop { // drop from above
+    @include transition(transform);
+    &.ng-leave.ng-leave-active,
+    &.ng-enter {
+        transform: translateY(-100%);
+    }
+    &.ng-leave,
+    &.ng-enter.ng-enter-active {
+        transform: translateY(0%);
+    }
+}
+.ng-slide {
+    transition: transform $transitionTime ease-in-out, opacity $transitionTime linear;
+    &.ng-leave.ng-leave-active,
+    &.ng-enter {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    &.ng-leave,
+    &.ng-enter.ng-enter-active {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@mixin ng-fade { // fade-in and -out
+    &.ng-enter-stagger,
+    &.ng-leave-stagger,
+    &.ng-move-stagger {
+        transition-delay: $transitionTime/7;
+    }
+    &.ng-leave.ng-leave-active,
+    &.ng-enter,
+    &.ng-move {
+        @include transition(opacity);
+        opacity: 0;
+    }
+    &.ng-leave,
+    &.ng-enter.ng-enter-active,
+    &.ng-move.ng-move-active {
+        @include transition(opacity);
+        opacity: 1;
+    }
+}
+.fades { // allows inline injection (also needs 'anim-ng' class)
+    @include ng-fade;
+}
+.ng-fade-out { // only fade-out
+    @include transition(opacity, $transitionTime*2, linear);
+    &.ng-leave {
+        opacity: 1;
+        &.ng-leave-active {
+          opacity: 0;
+        }
+    }
+}
