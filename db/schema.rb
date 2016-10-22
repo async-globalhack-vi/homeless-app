@@ -13,14 +13,19 @@
 ActiveRecord::Schema.define(version: 20161022043421) do
 
   create_table "assistance_providers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string "name"
+    t.string  "name"
+    t.string  "email"
+    t.string  "street_address"
+    t.string  "city"
+    t.string  "state"
+    t.string  "zip"
+    t.string  "max_monthly_contribution"
+    t.integer "user_id"
+  end
+
+  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "email"
     t.string "password"
-    t.string "street_address"
-    t.string "city"
-    t.string "state"
-    t.string "zip"
-    t.string "max_monthly_contribution"
   end
 
 end
