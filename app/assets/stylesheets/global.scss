@@ -1,6 +1,5 @@
 
-
-// @import "//fonts.googleapis.com/css?family=Muli:300,400|Roboto:300,400,700";
+@import "//fonts.googleapis.com/css?family=Muli:300,400|Roboto:300,400,700";
 
 body {
     // color: @grayDark;
@@ -17,10 +16,12 @@ body {
     } */
 }
 nav {
-    // .muli;
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
 }
 h1, h2, h3, h4, h5, h6 {
-    // .muli;
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
     b,
     strong {
         font-weight: 400;
@@ -37,7 +38,8 @@ h4 {
     font-weight: 400;
 }
 p, ul, ol, li {
-    // .roboto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     b,
     strong {
         font-weight: 700;
@@ -52,7 +54,8 @@ p {
 }
 input, textarea, select, button,
 .title-bar {
-    // .roboto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 img {
     margin: auto;
