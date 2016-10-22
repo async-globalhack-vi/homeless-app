@@ -45,6 +45,52 @@ AssistanceProvider.create(
     city: "St. Louis",
     state: "MO",
     zip: "63113",
-    max_monthly_contribution: "600",
-    user_id: 2
+    max_monthly_contribution: "200",
+    user_id: 3
+)
+AssistanceProvider.create(
+    name: "Shawn A",
+    email: "shawn.a@example.com",
+    street_address: "900 Spruce St",
+    city: "St. Louis",
+    state: "MO",
+    zip: "63102",
+    max_monthly_contribution: "400",
+    user_id: 4
+)
+AssistanceProvider.create(
+    name: "David A",
+    email: "dave.a@example.com",
+    street_address: "400 S. 4th St.",
+    city: "St. Louis",
+    state: "MO",
+    zip: "63102",
+    max_monthly_contribution: "1000",
+    user_id: 5
+)
+
+CareCoordinator.create(
+    name: "Matt A",
+    email: "matt.a@example.com",
+    user_id: 6
+)
+CareCoordinator.create(
+    name: "Joe A",
+    email: "joe.a@example.com",
+    user_id: 7
+)
+CareCoordinator.create(
+    name: "Micah A",
+    email: "micah.a@example.com",
+    user_id: 8
+)
+CareCoordinator.create(
+    name: "Shawn A",
+    email: "shawn.a@example.com",
+    user_id: 9
+)
+CareCoordinator.create(
+    name: "David A",
+    email: "dave.a@example.com",
+    user_id: 10
 )

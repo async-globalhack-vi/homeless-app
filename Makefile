@@ -13,6 +13,10 @@ start:
 	@echo "starting app..."
 	@bundle exec rails server
 
+console:
+	@echo "starting console..."
+	@bundle exec rails console
+
 clean:
 	@echo "cleaning..."
 
