@@ -1,32 +1,28 @@
-[
-	{
-		"event_type" : "Notice to Vacate"
-  		"date" : "10/18/2016",
-		"description" : "Court Filing Number: 2016NV04676\nDefendant: James L. Thomaston\nPlaintiff: Crown Properties LLC\nServer: Deputy Alan Morgan"
-  		"Address1" : "400 South 4th Street",
-  		"Address2" : "#807",
-  		"City" : "Saint Louis",
-  		"State" : "MO",
-  		"Zip_Code" : "63102"
-	},
-	{
-		"event_type" : "Notice to Vacate"
-  		"date" : "10/18/2016",
-		"description" : "Court Filing Number: 2016NV04685\nDefendant: Dorothy Abernathy\nPlaintiff: Acme Property Management, Inc.\nServer: Mr Paul Lincbax"
-  		"Address1" : "900 Spruce Street",
-  		"Address2" : "#701",
-  		"City" : "Saint Louis",
-  		"State" : "MO",
-  		"Zip_Code" : "63102"
-	},
-	{
-		"event_type" : "Foreclosure"
-  		"date" : "10/19/2016",
-		"description" : "Court Filing Number: 2016FC04702\nDefendant: Don Jefferson\nPlaintiff: Graham Lofts, Inc.\nServer: Deputy Adam Clennty"
-  		"Address1" : "1412 Washington Avenue",
-  		"Address2" : "",
-  		"City" : "Saint Louis",
-  		"State" : "MO",
-  		"Zip_Code" : "63102"
-	}
-]
+[{
+	"event_type": "Notice to Vacate",
+	"date": "10/18/2016",
+	"description": "Court Filing Number: 2016NV04676\nDefendant: James L. Thomaston\nPlaintiff: Crown Properties LLC\nServer: Deputy Alan Morgan",
+	"Address1": "400 South 4th Street",
+	"Address2": "#807",
+	"City": "Saint Louis",
+	"State": "MO",
+	"Zip_Code": "63102"
+}, {
+	"event_type": "Notice to Vacate",
+	"date": "10/18/2016",
+	"description": "Court Filing Number: 2016NV04685\nDefendant: Dorothy Abernathy\nPlaintiff: Acme Property Management, Inc.\nServer: Mr Paul Lincbax",
+	"Address1": "900 Spruce Street",
+	"Address2": "#701",
+	"City": "Saint Louis",
+	"State": "MO",
+	"Zip_Code": "63102"
+}, {
+	"event_type": "Foreclosure",
+	"date": "10/19/2016",
+	"description": "Court Filing Number: 2016FC04702\nDefendant: Don Jefferson\nPlaintiff: Graham Lofts, Inc.\nServer: Deputy Adam Clennty",
+	"Address1": "1412 Washington Avenue",
+	"Address2": "",
+	"City": "Saint Louis",
+	"State": "MO",
+	"Zip_Code": "63102"
+}]
