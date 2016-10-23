@@ -18,12 +18,13 @@ section {
         background-repeat: no-repeat;
         background-position: center right;
         background-image: url("hero1.jpg");
+        font-size: 1.25em;
         padding-top: 10%;
         color: #fff;
         p {
-            width: 50%;
-            font-size: 1.1em;
+            width: 55%;
             line-height: 1.5;
+            text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
             &.btn {
                 text-align: right;
             }
@@ -31,7 +32,7 @@ section {
     }
     p {
         &:first-of-type {
-            margin-bottom: 2rem;
+            margin-bottom: 4rem;
         }
     }
 }
