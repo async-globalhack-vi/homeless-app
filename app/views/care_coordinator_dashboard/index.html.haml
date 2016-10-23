@@ -11,7 +11,10 @@
 %section
   %h2.underline Care Coordinator Dashboard
 
-  = pie_chart({"Football" => 10, "Basketball" => 5})
+  -#= geo_chart QualifiedNeed.group(:zip).count, library: {region: 'US', resolution: 'provinces', displayMode: "markers"}
+
+
+  -#= pie_chart({"Football" => 10, "Basketball" => 5})
 
   -#= line_chart(@all_events.map { |event|
   -#  {name: event.name, data: event.group_by_day(:created_at).count}

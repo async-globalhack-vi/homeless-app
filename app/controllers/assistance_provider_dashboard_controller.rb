@@ -3,6 +3,7 @@ class AssistanceProviderDashboardController < ApplicationController
   
   def index
     @qualified_need = QualifiedNeed.find_by(user_id: current_user.id)
+    @provider = AssistanceProvider.find_by(user_id: current_user.id)
   end
 
   def reject
