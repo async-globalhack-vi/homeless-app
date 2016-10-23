@@ -9,6 +9,18 @@ header {
     border-bottom: 1px solid #f2f3f4;
     box-shadow: 0 0 1rem 0.25rem rgba(0, 0, 0, 0.25);
 }
+h2 {
+    + form {
+        width: 50%;
+        display: block;
+        margin: auto;
+        paddimg-top: 2em;
+        .actions {
+            margin-top: 1em;
+            float: right;
+        }
+    }
+}
 .wrapper {
     min-height: 70vh;
     background-size: cover;
@@ -17,7 +29,9 @@ header {
     background-image: url("hero1.jpg");
     position: relative;
     section {
-        background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .15)), to(rgba(0, 0, 0, .5))), -webkit-gradient(linear, left top, right bottom, color-stop(0, rgba(255, 255, 255, 0)), color-stop(0.5, rgba(255, 255, 255, .3)), color-stop(0.501, rgba(255, 255, 255, 0)), color-stop(1, rgba(255, 255, 255, 0)));
+        background:
+            -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .15)), to(rgba(0, 0, 0, .4))),
+            -webkit-gradient(linear, left top, right bottom, color-stop(0, rgba(255, 255, 255, 0)), color-stop(0.5, rgba(255, 255, 255, .3)), color-stop(0.501, rgba(255, 255, 255, 0)), color-stop(1, rgba(255, 255, 255, 0)));
         position: absolute;
         top: 0;
         right: 0;

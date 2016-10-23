@@ -1,37 +1,38 @@
-= form_tag(action: 'create', method: 'post') do 
-  %fieldset
-    %p
+%section
+  %h2.underline New Assistance Provider
+  = form_tag(action: 'create', method: 'post') do
+
+    .input-group
       = label_tag :email, 'Email'
       = text_field_tag :email
 
-    %p
+    .input-group
       = label_tag :password, 'Password'
       = password_field_tag :password
 
-  %fieldset
-    %p
+    .input-group
       = label_tag :name, 'Name/Organization name'
       = text_field_tag :name
 
-    %p
+    .input-group
       = label_tag :street_address, 'Street address'
       = text_field_tag :street_address
 
-    %p
+    .input-group
       = label_tag :city, 'City'
       = text_field_tag :city
 
-    %p
+    .input-group
       = label_tag :state, 'State'
       = text_field_tag :state
 
-    %p
+    .input-group
       = label_tag :zip, 'Zip'
       = text_field_tag :zip
 
-    %p
+    .input-group
       = label_tag :max_monthly_contribution, 'Max monthly contribution'
       = text_field_tag :max_monthly_contribution
 
-  = submit_tag 'Submit'
-
+    .actions
+      %button{'ng-click' => 'submit()'} Submit

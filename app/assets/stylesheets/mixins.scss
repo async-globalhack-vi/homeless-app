@@ -123,7 +123,7 @@
 }
 .tab-group {
     display: flex;
-    padding: 1em 0 0.5em;
+    padding: 1em 0;
     > * {
         + * {
             margin-left: 1em;
@@ -135,6 +135,9 @@
     padding: 0.5em;
     border: 1px solid;
     border-bottom: none;
+    &:hover {
+        cursor: pointer;
+    }
     &.active {
         color: #083d77;
         background-color: #fff;

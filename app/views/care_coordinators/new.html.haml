@@ -1,16 +1,19 @@
-= form_tag(action: 'create', method: 'post') do 
-  %fieldset
-    %p
+%section
+  %h2.underline New Assistance Provider
+  = form_tag(action: 'create', method: 'post') do
+
+    .input-group
       = label_tag :name, 'Name'
       = text_field_tag :name
 
-    %p
+    .input-group
       = label_tag :email, 'Email'
       = text_field_tag :email
 
-    %p
+    .input-group
       = label_tag :password, 'Password'
       = password_field_tag :password
 
-  = submit_tag 'Submit'
+    .actions
+      %button{'ng-click' => 'submit()'} Submit
 
