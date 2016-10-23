@@ -19,12 +19,13 @@ ActiveRecord::Schema.define(version: 20161022043421) do
     t.string  "city"
     t.string  "state"
     t.string  "zip"
-    t.float   "lat",                            limit: 24
-    t.float   "lng",                            limit: 24
+    t.float   "lat",                             limit: 24
+    t.float   "lng",                             limit: 24
     t.string  "max_monthly_contribution"
     t.string  "available_monthly_contribution"
     t.integer "user_id"
     t.integer "qualified_need_id"
+    t.integer "successfully_funded_needs_count",            default: 0
   end
 
   create_table "care_coordinators", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

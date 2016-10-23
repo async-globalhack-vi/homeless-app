@@ -39,8 +39,13 @@ RSpec.describe AssistanceProvider, :type => :model do
         expect(subject.max_monthly_contribution.to_f).to be_within(0.01).of(1000.0)
       end
 
-      it 'sets the need to funded' do
+      it 'sets the need to funded and releases it from you' do
         expect(need.funded).to be true
+        expect(need.user_id).to be nil
+      end
+
+      it 'increments your successfully funded count' do
+        expect(subject.successfully_funded_needs_count).to be 1
       end
     end
 
@@ -72,7 +77,7 @@ RSpec.describe AssistanceProvider, :type => :model do
     end
   end
 
-  describe 'rejecting funding a need with no additional providers' do
+  describe 'rejecting funding a need when there are no additional providers' do
     let! (:subject) { FactoryGirl.create(:assistance_provider, max_monthly_contribution: "1000", available_monthly_contribution: "1000" ) }
     let! (:need) { FactoryGirl.create(:qualified_need, total_needed: "300") }
 

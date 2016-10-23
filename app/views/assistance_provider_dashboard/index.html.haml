@@ -49,5 +49,11 @@
       %p.btn
         = link_to 'Not this time...', reject_path(@qualified_need.id)
 
+  %p
+    You have helped
+    %b
+      = @provider.successfully_funded_needs_count
+    stay out of homelessness!
+
   = bar_chart({"Requestable Amount" => 700}, height:"200px", colors:['#08773b'], max: @provider.max_monthly_contribution)
   = bar_chart({"Your Monthly Max" => @provider.max_monthly_contribution}, height:"200px", colors:['#083d77'])
