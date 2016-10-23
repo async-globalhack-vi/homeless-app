@@ -24,6 +24,7 @@ class CreateAssistanceProvider < ActiveRecord::Migration[5.0]
       t.string :available_monthly_contribution
       t.integer :user_id
       t.integer :qualified_need_id
+      t.integer :successfully_funded_needs_count, :default => 0
     end
 
     create_table :events do |t|
