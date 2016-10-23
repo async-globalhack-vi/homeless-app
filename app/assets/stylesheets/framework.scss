@@ -10,8 +10,30 @@ header {
     box-shadow: 0 0 1rem 0.25rem rgba(0, 0, 0, 0.25);
 }
 section {
-    min-height: calc(100vh - 4rem);
     padding: 2rem;
+    padding-left: 3.5rem;
+    &.first {
+        min-height: 70vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-image: url("hero1.jpg");
+        padding-top: 10%;
+        color: #fff;
+        p {
+            width: 50%;
+            font-size: 1.1em;
+            line-height: 1.5;
+            &.btn {
+                text-align: right;
+            }
+        }
+    }
+    p {
+        &:first-of-type {
+            margin-bottom: 2rem;
+        }
+    }
 }
 nav {
     justify-content: flex-end;

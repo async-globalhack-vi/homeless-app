@@ -28,10 +28,8 @@ h1, h2, h3, h4, h5, h6, th, label {
 }
 h1, h2, h3 {
     text-transform: uppercase;
-    // color: @blue;
 }
 h2, h3 {
-    // color: @blue10;
 }
 h4 {
     font-weight: 400;
@@ -46,7 +44,6 @@ p, ul, ol, li, td {
 }
 p {
     a {
-        // .underline;
         padding-bottom: 0.2em;
         background-size: 1px 1px;
     }
