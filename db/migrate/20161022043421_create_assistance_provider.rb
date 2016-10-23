@@ -21,6 +21,7 @@ class CreateAssistanceProvider < ActiveRecord::Migration[5.0]
       t.float  :lat
       t.float  :lng
       t.string :max_monthly_contribution
+      t.string :available_monthly_contribution
       t.integer :user_id
       t.integer :qualified_need_id
     end
