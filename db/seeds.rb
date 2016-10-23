@@ -611,8 +611,8 @@ Event.create!(
     city: "Apopka",
     state: "FL",
     zip: "32703",
-    event_type: "Missing Person",
-    notes: "88 year old Mary Linda reported missing. Has severe dementia."
+    event_type: "Utility Cutoff (Natural Gas)",
+    notes: "88 year old Mary Linda had her utility suspended due to non payment"
 )
 Event.create!(
     date_of_event: "10/22/2016",
