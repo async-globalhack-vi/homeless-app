@@ -26,6 +26,6 @@ class QualifiedNeed < ActiveRecord::Base
   end
 
   def can_meet_need(assistance_provider)
-    self.total_needed < assistance_provider.max_monthly_contribution
+    self.total_needed.to_f <= assistance_provider.max_monthly_contribution.to_f
   end
 end
