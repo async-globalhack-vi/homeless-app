@@ -22,7 +22,7 @@ Geokit::Geocoders::request_timeout = 5
 # This is your Google Maps geocoder keys (all optional).
 # See http://www.google.com/apis/maps/signup.html
 # and http://www.google.com/apis/maps/documentation/#Geocoding_Examples
-# Geokit::Geocoders::GoogleGeocoder.client_id = ''
+Geokit::Geocoders::GoogleGeocoder.client_id = ENV['GMAPS_CLIENT_ID']
 # Geokit::Geocoders::GoogleGeocoder.cryptographic_key = ''
 # Geokit::Geocoders::GoogleGeocoder.channel = ''
 
@@ -42,7 +42,7 @@ Geokit::Geocoders::GoogleGeocoder.api_key = ENV['GMAPS_API_KEY']
 # See http://geocoder.us
 # and http://geocoder.us/user/signup
 #Geokit::Geocoders::UsGeocoder.key = 'username:password'
-# Geokit::Geocoders::UsGeocoder.key = nil
+Geokit::Geocoders::UsGeocoder.key = nil
 
 # This is your authorization key for geocoder.ca.
 # To use the free service, the value can be set to nil or false.  For
@@ -87,10 +87,10 @@ Geokit::Geocoders::provider_order = [:google,:us]
 
 # Disable HTTPS globally.  This option can also be set on individual
 # geocoder classes.
-Geokit::Geocoders::secure = false
+# Geokit::Geocoders::secure = false
 
 # Control verification of the server certificate for geocoders using HTTPS
-Geokit::Geocoders::ssl_verify_mode = OpenSSL::SSL::VERIFY_(PEER/NONE)
+# Geokit::Geocoders::ssl_verify_mode = OpenSSL::SSL::VERIFY_(PEER/NONE)
 # Setting this to VERIFY_NONE may be needed on systems that don't have
 # a complete or up to date root certificate store. Only applies to
 # the Net::HTTP adapter.
