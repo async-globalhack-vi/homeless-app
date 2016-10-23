@@ -1,13 +1,14 @@
 
-/ - if @error
-/   %h3
-/     = @error
 
 %header.flex
   %h1.logo Ruby Slippers
 
   %nav.flex
     %button Log In
+
+/ - if @error
+/   %h3
+/     = @error
 
 .wrapper
   %section.first
