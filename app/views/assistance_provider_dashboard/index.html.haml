@@ -22,12 +22,12 @@
     .qualified-needs
       %table
         %thead
-          %th.type Qualified Need
-          %th Deadline
-          %th Point of Contact
-          %th Phone
-          %th Address
-          %th.actions
+          %tr
+            %th.type Qualified Need
+            %th Deadline
+            %th Point of Contact
+            %th Phone
+            %th Address
         %tbody
           %tr
             %td
@@ -43,6 +43,7 @@
 
     .notes
       = @qualified_need.notes
+
     .actions
       %p.btn.cancel
         = link_to 'Not this time', reject_path(@qualified_need.id)
