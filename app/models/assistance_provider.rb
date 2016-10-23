@@ -16,7 +16,7 @@ class AssistanceProvider < ActiveRecord::Base
   def pledge(qualified_need)
     qualified_need.funded = true
     qualified_need.user_id = nil
-    self.available_monthly_contribution = (max_monthly_contribution.to_f - qualified_need.total_needed.to_f).to_s
+    self.available_monthly_contribution = (available_monthly_contribution.to_f - qualified_need.total_needed.to_f).to_s
     self.successfully_funded_needs_count += 1
     qualified_need.save!
     self.save!
