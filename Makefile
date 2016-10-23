@@ -1,4 +1,4 @@
-.PHONY: clean db start
+.PHONY: clean db start console test
 
 default: clean db start
 
@@ -18,7 +18,8 @@ console:
 
 test:
 	@echo "testing with rspec..."
-	@bundle exec rspec
+	@RAILS_ENV=test bundle exec rake db:migrate
+	@bundle exec rspec --format documentation
 
 clean:
 	@echo "cleaning..."

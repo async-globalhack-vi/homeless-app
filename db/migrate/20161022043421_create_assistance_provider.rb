@@ -50,6 +50,8 @@ class CreateAssistanceProvider < ActiveRecord::Migration[5.0]
       t.string :zip
       t.float  :lat
       t.float  :lng
+      t.boolean :funded
+      t.integer :number_of_rejections, :default => 0
       t.integer :user_id
     end
   end
