@@ -19,6 +19,15 @@ class AssistanceProvider < ActiveRecord::Base
     qualified_need.rejections << self
     qualified_need.number_of_rejections += 1
     qualified_need.save!
+    puts "about to find next provider"
+    if (next_provider = qualified_need.nearest_assistance_who_can_meet_need)
+      qualified_need.user_id = next_provider.user_id
+      puts "found"
+    end
+    qualified_need.save!
+
+    self.available_monthly_contribution = "0"
+    self.save
   end
 
   def address
