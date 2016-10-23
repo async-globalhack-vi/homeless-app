@@ -44,6 +44,7 @@ User.create!(email: "matt.a41@example.com", password: "pass")
 User.create!(email: "matt.a42@example.com", password: "pass")
 User.create!(email: "matt.a43@example.com", password: "pass")
 User.create!(email: "matt.a44@example.com", password: "pass")
+User.create!(email: "joe.country@example.com", password: "pass")
 
 AssistanceProvider.create!(
     name: "Matt A",
@@ -435,6 +436,17 @@ AssistanceProvider.create!(
     max_monthly_contribution: "400",
     user_id: 44
 )
+AssistanceProvider.create!(
+    name: "Joe Country's Church",
+    email: "joe.country@example.com",
+    street_address: "131 1st Street",
+    city: "Rosebud",
+    state: "MO",
+    zip: "63091",
+    max_monthly_contribution: "1000",
+    user_id: 45
+)
+
 CareCoordinator.create!(
     name: "Matt A",
     email: "matt.a@example.com",
@@ -658,3 +670,14 @@ Event.create!(
     event_type: "eviction notice",
     notes: "This is for a family of 4. Very said situation. Please help them."
 )
+Event.create!(
+    date_of_event: "10/22/2016",
+    street_address: "2239 Stockpile Road",
+    city: "Rosebud",
+    state: "MO",
+    zip: "63091",
+    event_type: "Overdue electric bill",
+    notes: "2nd overdue electric bill. Electric cutoff in 1 week."
+)
+
+

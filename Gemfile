@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'mysql2', '>= 0.3.18', '< 0.5'
 gem 'puma', '~> 3.0'
@@ -28,6 +27,11 @@ gem 'underscore-rails'
 
 group :development, :test do
   gem 'byebug', platform: :mri
+end
+
+group :production do
+  #heroku
+  gem 'rails_serve_static_assets'
 end
 
 group :development do

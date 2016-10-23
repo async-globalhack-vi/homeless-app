@@ -32,5 +32,16 @@ RSpec.describe QualifiedNeed, :type => :model do
         expect(subject.nearest_assistance_who_can_meet_need).to eq assistance_provider1
       end
     end
+
+    describe 'only providers with sufficient money are returned' do
+      assistance_provider1.max_monthly_contribution = "850"
+      assistance_provider2.max_monthly_contribution = "1000"
+      assistance_provider3.max_monthly_contribution = "800"
+      let! (:subject) { FactoryGirl.create(:qualified_need, street_address: "900 Spruce St.", city:"St. Louis", state:"MO", zip:"63102") }
+      subject.total_needed = "900"
+      it 'gives only provider that has sufficient funds' do
+        expect(subject.nearest_assistance_who_can_meet_need).to eq assistance_provider2
+      end
+    end
   end
 end
