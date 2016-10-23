@@ -1,1 +1,24 @@
-%h1 Thank you for your contributuion!
+%header.flex
+  %h1.logo Ruby Slippers
+
+  %nav.flex
+    %p
+      = current_user.email
+    %span &#124;
+    %p
+      = link_to 'Log Out', logout_path
+
+%section
+%h2 Thank you for your contribution!
+
+%p
+  Your efforts are the first line of defense in the fight against homelessness, and we couldn't do it without you!
+
+%p
+  With the support of organizations like yours we have ended 34 cases of homelessness in the St. Louis
+  area to since Oct 2016.
+
+= link_to 'Back to my dashboard', assistance_provider_dashboard_path
+
+
+

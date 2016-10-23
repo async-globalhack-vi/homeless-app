@@ -1,3 +1,21 @@
+%header.flex
+  %h1.logo Ruby Slippers
+
+  %nav.flex
+    %p
+      = current_user.email
+    %span &#124;
+    %p
+      = link_to 'Log Out', logout_path
+
 %section.thanks
-  .jumbo
-    %p Maybe next time. Thanks for your consideration.
+.jumbo
+  %p Maybe next time. Thanks for your consideration.
+
+%p
+  Since you declined this request, we've set your requestable amount to zero, to give you a break from requests for the rest of the month.
+
+%p
+  We'll try you again next month if there is a local need. Thanks!
+
+= link_to 'Back to my dashboard', assistance_provider_dashboard_path
