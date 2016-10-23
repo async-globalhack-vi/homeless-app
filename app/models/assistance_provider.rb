@@ -7,6 +7,12 @@ class AssistanceProvider < ActiveRecord::Base
                    :lng_column_name => :lng,
                    :auto_geocode=>{:field=>:address, :error_message=>'Could not geocode address'}
 
+  before_save :default_values
+
+  def default_values
+    self.available_monthly_contribution ||= self.max_monthly_contribution
+  end
+
   def pledge(qualified_need)
     qualified_need.funded = true
     self.available_monthly_contribution = (max_monthly_contribution.to_f - qualified_need.total_needed.to_f).to_s
@@ -19,10 +25,8 @@ class AssistanceProvider < ActiveRecord::Base
     qualified_need.rejections << self
     qualified_need.number_of_rejections += 1
     qualified_need.save!
-    puts "about to find next provider"
     if (next_provider = qualified_need.nearest_assistance_who_can_meet_need)
       qualified_need.user_id = next_provider.user_id
-      puts "found"
     end
     qualified_need.save!
 

@@ -52,7 +52,6 @@ RSpec.describe AssistanceProvider, :type => :model do
       before do
         need.user_id = subject.user_id
         need.save!
-        puts "about to reject"
         subject.reject(need)
       end
       it 'zeroes your available amount' do
@@ -80,7 +79,6 @@ RSpec.describe AssistanceProvider, :type => :model do
     before do
       need.user_id = subject.user_id
       need.save!
-      puts "about to reject"
       subject.reject(need)
     end
 

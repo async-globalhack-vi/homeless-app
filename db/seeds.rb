@@ -679,5 +679,13 @@ Event.create!(
     event_type: "Overdue electric bill",
     notes: "2nd overdue electric bill. Electric cutoff in 1 week."
 )
-
+Event.create!(
+    date_of_event: "10/22/2016",
+    street_address: "131 1st Street",
+    city: "Rosebud",
+    state: "MO",
+    zip: "63091",
+    event_type: "Overdue electric bill 3",
+    notes: "3rd overdue electric bill. Electric cutoff in 1 day."
+)
 

@@ -12,7 +12,7 @@ class QualifiedNeed < ActiveRecord::Base
   end
 
   def nearest_assistance_who_can_meet_need
-
+    puts ""
     nearest_provider = nil
     nearest_distance = 100000
     AssistanceProvider.all.each do |provider|
@@ -20,6 +20,7 @@ class QualifiedNeed < ActiveRecord::Base
       puts ""
       next unless can_meet_need(provider)
       dist = self.distance_to(provider)
+      puts "distance to qualified provider ------------------> #{dist}"
       if (dist < nearest_distance)
         nearest_distance = dist
         nearest_provider = provider

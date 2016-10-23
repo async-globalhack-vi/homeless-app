@@ -5,6 +5,7 @@ class QualifiedNeedsController < ApiController
 
   def create
     need = QualifiedNeed.new qualified_need_data
+    need. save!
     assistance_provider = need.nearest_assistance_who_can_meet_need
     need.user_id = assistance_provider.user_id
     need.save!
