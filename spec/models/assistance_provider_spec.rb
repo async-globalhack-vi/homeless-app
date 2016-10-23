@@ -46,11 +46,13 @@ RSpec.describe AssistanceProvider, :type => :model do
 
     describe 'rejecting funding a need' do
       let! (:subject) { FactoryGirl.create(:assistance_provider, max_monthly_contribution: "1000", available_monthly_contribution: "1000" ) }
+      let! (:another_assistance_provider) { FactoryGirl.create(:assistance_provider, max_monthly_contribution: "999", available_monthly_contribution: "999") }
       let! (:need) { FactoryGirl.create(:qualified_need, total_needed: "300") }
 
       before do
         need.user_id = subject.user_id
         need.save!
+        puts "about to reject"
         subject.reject(need)
       end
       it 'leaves your available max amount the same' do
@@ -64,6 +66,26 @@ RSpec.describe AssistanceProvider, :type => :model do
       it 'does not set the need to funded' do
         expect(need.funded).to be false
       end
+
+      it 'sets the need to the next available provider when there are additional available providers' do
+        expect(need.user_id).to eq another_assistance_provider.user_id
+      end
+    end
+  end
+
+  describe 'rejecting funding a need with no additional providers' do
+    let! (:subject) { FactoryGirl.create(:assistance_provider, max_monthly_contribution: "1000", available_monthly_contribution: "1000" ) }
+    let! (:need) { FactoryGirl.create(:qualified_need, total_needed: "300") }
+
+    before do
+      need.user_id = subject.user_id
+      need.save!
+      puts "about to reject"
+      subject.reject(need)
+    end
+
+    it 'the need remains unassociated with a provider' do
+      expect(need.user_id).to be nil
     end
   end
 end
