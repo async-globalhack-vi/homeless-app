@@ -19,42 +19,45 @@
         We will notify you when someone needs your help.
 
   - if @qualified_need
-    .card
-      %h3
-      = @qualified_need.total_needed
+    .qualified-needs
+      %table
+        %thead
+          %th.type Qualified Need
+          %th Deadline
+          %th Point of Contact
+          %th Phone
+          %th Address
+          %th
+          %th
+        %tbody
+          %td
+            = @qualified_need.total_needed
+          %td
+            = @qualified_need.deadline
+          %td
+            = @qualified_need.point_of_contact
+          %td
+            = @qualified_need.phone
+          %td
+            = @qualified_need.address
+          %td
+            %p.btn
+              = link_to 'Pledge!', pledge_path(@qualified_need.id)
+          %td
+            %p.btn.cancel
+              = link_to 'Not this time', reject_path(@qualified_need.id)
 
-    %h3 Deadline
-    = @qualified_need.deadline
-
-    %h3 Point of Contact
-    = @qualified_need.point_of_contact
-
-    %h3 Phone
-    = @qualified_need.phone
-
-    %h3 Address
-    = @qualified_need.address
-
-    %h3 Notes
-    = @qualified_need.notes
-
-    %p
-      = link_to 'Pledge!', pledge_path(@qualified_need.id)
-    %p
-      = link_to 'Not this time...', reject_path(@qualified_need.id)
-
-    .actions
-      %p.btn
-        = link_to 'Pledge!', pledge_path(@qualified_need.id)
-      %p.btn
-        = link_to 'Not this time...', reject_path(@qualified_need.id)
+      .notes
+        = @qualified_need.notes
 
   - if @provider.successfully_funded_needs_count > 0
     %p
       You have helped
       %b
         = @provider.successfully_funded_needs_count
-      household stay out of homelessness!
+      household(s) stay out of homelessness!
 
+  %br
+  %br
   = bar_chart({"Requestable Amount" => @provider.available_monthly_contribution}, height:"200px", colors:['#08773b'], max: @provider.max_monthly_contribution)
   = bar_chart({"Your Monthly Max" => @provider.max_monthly_contribution}, height:"200px", colors:['#083d77'], max: @provider.max_monthly_contribution)

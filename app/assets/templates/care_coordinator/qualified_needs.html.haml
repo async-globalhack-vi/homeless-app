@@ -1,5 +1,4 @@
 .qualified-needs
-  %button.add-need{'ng-click' => 'addQualifiedNeed()'} Add qualified need
   %table{'ng-if' => 'qualifiedNeeds && qualifiedNeeds.length > 0'}
     %thead
       %th Total needed
@@ -20,3 +19,4 @@
       %td {{ qualifiedNeed.state }}
       %td {{ qualifiedNeed.zip }}
   %qualified-need-form
+  %button.add-need{'ng-click' => 'addQualifiedNeed()'} Add qualified need
