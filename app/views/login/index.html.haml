@@ -10,6 +10,19 @@
 /   %h3
 /     = @error
 
+.login
+  = form_tag(action: 'create', method: 'post') do
+    .input-group
+      = label_tag :email, 'Email'
+      = text_field_tag :email
+
+    .input-group
+      = label_tag :password, 'Password'
+      = password_field_tag :password
+
+    .actions
+      = submit_tag 'Login'
+
 .wrapper
   %section.first
     %h2.slab Do what you can.
