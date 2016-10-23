@@ -21,8 +21,25 @@
       %h3
       = @qualified_need.total_needed
 
-      %h4 Deadline
-      = @qualified_need.deadline
+    %h3 Deadline
+    = @qualified_need.deadline
+
+    %h3 Point of Contact
+    = @qualified_need.point_of_contact
+
+    %h3 Phone
+    = @qualified_need.phone
+
+    %h3 Address
+    = @qualified_need.address
+
+    %h3 Notes
+    = @qualified_need.notes
+
+    %p
+      = link_to 'Pledge!', pledge_path(@qualified_need.id)
+    %p
+      = link_to 'Not this time...', reject_path(@qualified_need.id)
 
     .actions
       %p.btn
