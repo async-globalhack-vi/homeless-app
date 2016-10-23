@@ -22,13 +22,13 @@ Geokit::Geocoders::request_timeout = 3
 # This is your Google Maps geocoder keys (all optional).
 # See http://www.google.com/apis/maps/signup.html
 # and http://www.google.com/apis/maps/documentation/#Geocoding_Examples
-#Geokit::Geocoders::GoogleGeocoder.client_id = ''
-#Geokit::Geocoders::GoogleGeocoder.cryptographic_key = ''
-#Geokit::Geocoders::GoogleGeocoder.channel = ''
+# Geokit::Geocoders::GoogleGeocoder.client_id = ''
+# Geokit::Geocoders::GoogleGeocoder.cryptographic_key = ''
+# Geokit::Geocoders::GoogleGeocoder.channel = ''
 
 # You can also use the free API key instead of signed requests
 # See https://developers.google.com/maps/documentation/geocoding/#api_key
-#Geokit::Geocoders::GoogleGeocoder.api_key = ''
+Geokit::Geocoders::GoogleGeocoder.api_key = ENV['GMAPS_API_KEY']
 
 # You can also set multiple API KEYS for different domains that may be directed to this same application.
 # The domain from which the current user is being directed will automatically be updated for Geokit via
