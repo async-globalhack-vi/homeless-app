@@ -19,7 +19,7 @@
         %th City
         %th State
         %th Zip
-        %th
+        %th.actions
       %tbody
         %tr{'ng-repeat' => 'triggeredEvent in triggeredEvents'}
           %td.type {{ triggeredEvent.event_type }}
@@ -28,7 +28,7 @@
           %td {{ triggeredEvent.city }}
           %td {{ triggeredEvent.state }}
           %td {{ triggeredEvent.zip }}
-          %td
+          %td.actions
             %button{'ng-click' => 'claim(triggeredEvent.id)', 'ng-if' => 'allShowing'}
               Claim
             %button{'ng-click' => 'takeAction(triggeredEvent.id)', 'ng-if' => '!allShowing'}

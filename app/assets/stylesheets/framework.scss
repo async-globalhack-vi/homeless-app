@@ -46,6 +46,7 @@ table {
 }
 tbody {
     tr {
+        width: 100%;
         &:nth-child(odd) {
             background-color: #fff;
         }
@@ -69,20 +70,26 @@ td {
         text-transform: capitalize;
         font-weight: 400;
     }
+    &.actions {
+    }
 }
 button {
+    text-transform: capitalize;
+    transition: background-color 250ms ease-in-out;
     font-size: 1em;
     border-radius: 0.25rem;
     border: 0;
     background-color: #083d77;
     padding: 0.5em 1em;
     color: #fff;
+    &:hover {
+        background-color: lighten(#083d77, 10%);
+    }
 }
 label {
     color: #546;
     text-transform: uppercase;
     font-size: 0.8em;
-    margin-bottom: 0.25rem;
 }
 .add-need {
     padding: 0.75em 1.25em;

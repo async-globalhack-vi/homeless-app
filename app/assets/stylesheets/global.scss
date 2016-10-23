@@ -48,8 +48,12 @@ p {
         background-size: 1px 1px;
     }
 }
-input, textarea, select, button,
+input,
+textarea,
+select,
+button,
 .title-bar {
+    font-size: 1em;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
