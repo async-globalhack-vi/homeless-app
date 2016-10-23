@@ -30,6 +30,11 @@ group :development, :test do
   gem 'byebug', platform: :mri
 end
 
+group :production do
+  #heroku
+  gem 'rails_serve_static_assets'
+end
+
 group :development do
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
