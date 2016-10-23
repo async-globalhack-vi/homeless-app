@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E1F1EEED1DBCE0A900716A3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EEEC1DBCE0A900716A3A /* AppDelegate.swift */; };
+		E1F1EEEF1DBCE0A900716A3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EEEE1DBCE0A900716A3A /* ViewController.swift */; };
+		E1F1EEF21DBCE0A900716A3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1F1EEF01DBCE0A900716A3A /* Main.storyboard */; };
+		E1F1EEF41DBCE0A900716A3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1F1EEF31DBCE0A900716A3A /* Assets.xcassets */; };
+		E1F1EEF71DBCE0A900716A3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1F1EEF51DBCE0A900716A3A /* LaunchScreen.storyboard */; };
+		E1F1EF021DBCE0A900716A3A /* GH6IntakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EF011DBCE0A900716A3A /* GH6IntakeTests.swift */; };
+		E1F1EF0D1DBCE0A900716A3A /* GH6IntakeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F1EF0C1DBCE0A900716A3A /* GH6IntakeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1F1EEFE1DBCE0A900716A3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1F1EEE11DBCE0A900716A3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1F1EEE81DBCE0A900716A3A;
+			remoteInfo = GH6Intake;
+		};
+		E1F1EF091DBCE0A900716A3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1F1EEE11DBCE0A900716A3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1F1EEE81DBCE0A900716A3A;
+			remoteInfo = GH6Intake;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E1F1EEE91DBCE0A900716A3A /* GH6Intake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GH6Intake.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1F1EEEC1DBCE0A900716A3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E1F1EEEE1DBCE0A900716A3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E1F1EEF11DBCE0A900716A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E1F1EEF31DBCE0A900716A3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1F1EEF61DBCE0A900716A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E1F1EEF81DBCE0A900716A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1F1EEFD1DBCE0A900716A3A /* GH6IntakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GH6IntakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1F1EF011DBCE0A900716A3A /* GH6IntakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GH6IntakeTests.swift; sourceTree = "<group>"; };
+		E1F1EF031DBCE0A900716A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1F1EF081DBCE0A900716A3A /* GH6IntakeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GH6IntakeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1F1EF0C1DBCE0A900716A3A /* GH6IntakeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GH6IntakeUITests.swift; sourceTree = "<group>"; };
+		E1F1EF0E1DBCE0A900716A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1F1EEE61DBCE0A900716A3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1F1EEFA1DBCE0A900716A3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1F1EF051DBCE0A900716A3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E1F1EEE01DBCE0A900716A3A = {
+			isa = PBXGroup;
+			children = (
+				E1F1EEEB1DBCE0A900716A3A /* GH6Intake */,
+				E1F1EF001DBCE0A900716A3A /* GH6IntakeTests */,
+				E1F1EF0B1DBCE0A900716A3A /* GH6IntakeUITests */,
+				E1F1EEEA1DBCE0A900716A3A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E1F1EEEA1DBCE0A900716A3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1F1EEE91DBCE0A900716A3A /* GH6Intake.app */,
+				E1F1EEFD1DBCE0A900716A3A /* GH6IntakeTests.xctest */,
+				E1F1EF081DBCE0A900716A3A /* GH6IntakeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1F1EEEB1DBCE0A900716A3A /* GH6Intake */ = {
+			isa = PBXGroup;
+			children = (
+				E1F1EEEC1DBCE0A900716A3A /* AppDelegate.swift */,
+				E1F1EEEE1DBCE0A900716A3A /* ViewController.swift */,
+				E1F1EEF01DBCE0A900716A3A /* Main.storyboard */,
+				E1F1EEF31DBCE0A900716A3A /* Assets.xcassets */,
+				E1F1EEF51DBCE0A900716A3A /* LaunchScreen.storyboard */,
+				E1F1EEF81DBCE0A900716A3A /* Info.plist */,
+			);
+			path = GH6Intake;
+			sourceTree = "<group>";
+		};
+		E1F1EF001DBCE0A900716A3A /* GH6IntakeTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1F1EF011DBCE0A900716A3A /* GH6IntakeTests.swift */,
+				E1F1EF031DBCE0A900716A3A /* Info.plist */,
+			);
+			path = GH6IntakeTests;
+			sourceTree = "<group>";
+		};
+		E1F1EF0B1DBCE0A900716A3A /* GH6IntakeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E1F1EF0C1DBCE0A900716A3A /* GH6IntakeUITests.swift */,
+				E1F1EF0E1DBCE0A900716A3A /* Info.plist */,
+			);
+			path = GH6IntakeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1F1EEE81DBCE0A900716A3A /* GH6Intake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1F1EF111DBCE0A900716A3A /* Build configuration list for PBXNativeTarget "GH6Intake" */;
+			buildPhases = (
+				E1F1EEE51DBCE0A900716A3A /* Sources */,
+				E1F1EEE61DBCE0A900716A3A /* Frameworks */,
+				E1F1EEE71DBCE0A900716A3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GH6Intake;
+			productName = GH6Intake;
+			productReference = E1F1EEE91DBCE0A900716A3A /* GH6Intake.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E1F1EEFC1DBCE0A900716A3A /* GH6IntakeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1F1EF141DBCE0A900716A3A /* Build configuration list for PBXNativeTarget "GH6IntakeTests" */;
+			buildPhases = (
+				E1F1EEF91DBCE0A900716A3A /* Sources */,
+				E1F1EEFA1DBCE0A900716A3A /* Frameworks */,
+				E1F1EEFB1DBCE0A900716A3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1F1EEFF1DBCE0A900716A3A /* PBXTargetDependency */,
+			);
+			name = GH6IntakeTests;
+			productName = GH6IntakeTests;
+			productReference = E1F1EEFD1DBCE0A900716A3A /* GH6IntakeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E1F1EF071DBCE0A900716A3A /* GH6IntakeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1F1EF171DBCE0A900716A3A /* Build configuration list for PBXNativeTarget "GH6IntakeUITests" */;
+			buildPhases = (
+				E1F1EF041DBCE0A900716A3A /* Sources */,
+				E1F1EF051DBCE0A900716A3A /* Frameworks */,
+				E1F1EF061DBCE0A900716A3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1F1EF0A1DBCE0A900716A3A /* PBXTargetDependency */,
+			);
+			name = GH6IntakeUITests;
+			productName = GH6IntakeUITests;
+			productReference = E1F1EF081DBCE0A900716A3A /* GH6IntakeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1F1EEE11DBCE0A900716A3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = GuidosLabs;
+				TargetAttributes = {
+					E1F1EEE81DBCE0A900716A3A = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = X6533D8SRB;
+						ProvisioningStyle = Automatic;
+					};
+					E1F1EEFC1DBCE0A900716A3A = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = X6533D8SRB;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E1F1EEE81DBCE0A900716A3A;
+					};
+					E1F1EF071DBCE0A900716A3A = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = X6533D8SRB;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E1F1EEE81DBCE0A900716A3A;
+					};
+				};
+			};
+			buildConfigurationList = E1F1EEE41DBCE0A900716A3A /* Build configuration list for PBXProject "GH6Intake" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1F1EEE01DBCE0A900716A3A;
+			productRefGroup = E1F1EEEA1DBCE0A900716A3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1F1EEE81DBCE0A900716A3A /* GH6Intake */,
+				E1F1EEFC1DBCE0A900716A3A /* GH6IntakeTests */,
+				E1F1EF071DBCE0A900716A3A /* GH6IntakeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1F1EEE71DBCE0A900716A3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1F1EEF71DBCE0A900716A3A /* LaunchScreen.storyboard in Resources */,
+				E1F1EEF41DBCE0A900716A3A /* Assets.xcassets in Resources */,
+				E1F1EEF21DBCE0A900716A3A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1F1EEFB1DBCE0A900716A3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1F1EF061DBCE0A900716A3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1F1EEE51DBCE0A900716A3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1F1EEEF1DBCE0A900716A3A /* ViewController.swift in Sources */,
+				E1F1EEED1DBCE0A900716A3A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1F1EEF91DBCE0A900716A3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1F1EF021DBCE0A900716A3A /* GH6IntakeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1F1EF041DBCE0A900716A3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1F1EF0D1DBCE0A900716A3A /* GH6IntakeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1F1EEFF1DBCE0A900716A3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1F1EEE81DBCE0A900716A3A /* GH6Intake */;
+			targetProxy = E1F1EEFE1DBCE0A900716A3A /* PBXContainerItemProxy */;
+		};
+		E1F1EF0A1DBCE0A900716A3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1F1EEE81DBCE0A900716A3A /* GH6Intake */;
+			targetProxy = E1F1EF091DBCE0A900716A3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E1F1EEF01DBCE0A900716A3A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1F1EEF11DBCE0A900716A3A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E1F1EEF51DBCE0A900716A3A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1F1EEF61DBCE0A900716A3A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1F1EF0F1DBCE0A900716A3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1F1EF101DBCE0A900716A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1F1EF121DBCE0A900716A3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X6533D8SRB;
+				INFOPLIST_FILE = GH6Intake/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GuidosLabs.GH6Intake;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E1F1EF131DBCE0A900716A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X6533D8SRB;
+				INFOPLIST_FILE = GH6Intake/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GuidosLabs.GH6Intake;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E1F1EF151DBCE0A900716A3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = X6533D8SRB;
+				INFOPLIST_FILE = GH6IntakeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GuidosLabs.GH6IntakeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GH6Intake.app/GH6Intake";
+			};
+			name = Debug;
+		};
+		E1F1EF161DBCE0A900716A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = X6533D8SRB;
+				INFOPLIST_FILE = GH6IntakeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GuidosLabs.GH6IntakeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GH6Intake.app/GH6Intake";
+			};
+			name = Release;
+		};
+		E1F1EF181DBCE0A900716A3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = X6533D8SRB;
+				INFOPLIST_FILE = GH6IntakeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GuidosLabs.GH6IntakeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GH6Intake;
+			};
+			name = Debug;
+		};
+		E1F1EF191DBCE0A900716A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = X6533D8SRB;
+				INFOPLIST_FILE = GH6IntakeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GuidosLabs.GH6IntakeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GH6Intake;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1F1EEE41DBCE0A900716A3A /* Build configuration list for PBXProject "GH6Intake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1F1EF0F1DBCE0A900716A3A /* Debug */,
+				E1F1EF101DBCE0A900716A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1F1EF111DBCE0A900716A3A /* Build configuration list for PBXNativeTarget "GH6Intake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1F1EF121DBCE0A900716A3A /* Debug */,
+				E1F1EF131DBCE0A900716A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E1F1EF141DBCE0A900716A3A /* Build configuration list for PBXNativeTarget "GH6IntakeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1F1EF151DBCE0A900716A3A /* Debug */,
+				E1F1EF161DBCE0A900716A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E1F1EF171DBCE0A900716A3A /* Build configuration list for PBXNativeTarget "GH6IntakeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1F1EF181DBCE0A900716A3A /* Debug */,
+				E1F1EF191DBCE0A900716A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1F1EEE11DBCE0A900716A3A /* Project object */;
+}
