@@ -7,6 +7,20 @@ class AssistanceProvider < ActiveRecord::Base
                    :lng_column_name => :lng,
                    :auto_geocode=>{:field=>:address, :error_message=>'Could not geocode address'}
 
+  def pledge(qualified_need)
+    qualified_need.funded = true
+    self.available_monthly_contribution = (max_monthly_contribution.to_f - qualified_need.total_needed.to_f).to_s
+    qualified_need.save!
+    self.save!
+  end
+
+  def reject(qualified_need)
+    qualified_need.user_id = nil
+    qualified_need.rejections << self
+    qualified_need.number_of_rejections += 1
+    qualified_need.save!
+  end
+
   def address
     "#{street_address}, #{city}, #{state}, #{zip}"
   end
