@@ -7,7 +7,9 @@
     = link_to 'Logout', logout_path
 
 - if !@qualified_need
-  %h4 You have not qualified needs at this time. Please check back later.
+  %h3 Good news!
+  %p
+    We have no immediate needs in your area at the moment, but as always, we will notify you when someone needs your help.
 - if @qualified_need
   %section
     %h2 Assistance Provider Dashboard
