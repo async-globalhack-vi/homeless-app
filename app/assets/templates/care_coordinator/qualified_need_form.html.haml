@@ -31,6 +31,10 @@
     %label{for: :zip} Zip
     %input{id: :zip, 'ng-model' => 'form.zip'}
 
+  .input-group
+    %label{for: :status} Status
+    %input{id: :status, 'ng-model' => 'form.zip'}
+
   .actions
     %button.cancel{'ng-click' => 'cancel()'} Cancel
     %button{'ng-click' => 'submit()'} Submit
