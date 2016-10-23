@@ -25,6 +25,10 @@ gem 'geokit-rails', '~> 2.2'
 gem 'gmaps4rails'
 gem 'underscore-rails'
 
+# metrics charts
+gem 'groupdate'
+gem 'chartkick'
+
 group :development, :test do
   gem 'byebug', platform: :mri
 end

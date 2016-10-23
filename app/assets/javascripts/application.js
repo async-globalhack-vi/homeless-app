@@ -20,3 +20,4 @@
 //= require gmaps/google
 //= require_tree ../templates
 //= require_tree ./app
+//= require chartkick
