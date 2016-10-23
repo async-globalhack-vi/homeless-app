@@ -68,8 +68,33 @@
             color: #274b85;
             background-color: rgba(255, 255, 255, 0.75);
         }
-        &:active {
-
+    }
+}
+.jumbo {
+    padding: 2em 0;
+    p {
+        color: #083d77;
+        font-size: 1.25em;
+        font-weight: 400;
+    }
+}
+.tab-group {
+    display: flex;
+    padding: 0.5em 0;
+    > * {
+        + * {
+            margin-left: 1em;
         }
+    }
+}
+.tab {
+    padding: 0.5em;
+    border: 1px solid #675;
+    border-bottom: none;
+    &.active {
+        border-color: #083d77;
+    }
+    p:first-of-type {
+        margin-bottom: 0;
     }
 }

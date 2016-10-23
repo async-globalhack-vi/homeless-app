@@ -1,11 +1,14 @@
 .triggered-events
-  %button{'ng-click' => 'showAll()'} All events
-  %button{'ng-click' => 'showMine()'} My events
+  .tab-group
+    .tab{'ng-click' => 'showAll()', 'ng-class' => "{ 'active': allShowing }"}
+      %p All events
+    .tab{'ng-click' => 'showMine()', 'ng-class' => "{ 'active': !allShowing }"}
+      %p My events
 
-  %div{'ng-if' => 'triggeredEvents.length == 0 && allShowing'}
-    No events are in the system
-  %div{'ng-if' => 'triggeredEvents.length == 0 && !allShowing'}
-    You have no claimed events
+  %div.jumbo{'ng-if' => 'triggeredEvents.length == 0 && allShowing'}
+    %p No events are in the system.
+  %div.jumbo{'ng-if' => 'triggeredEvents.length == 0 && !allShowing'}
+    %p You have no claimed events.
 
   %div{'ng-if' => 'triggeredEvents && triggeredEvents.length > 0'}
     %table
@@ -32,4 +35,3 @@
               Action
 
   %event-action
-
