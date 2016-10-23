@@ -4,13 +4,13 @@
   %h1.logo Ruby Slippers
 
   %nav.flex
-    %button Log In
+    %button{'ng-click' => 'showLogin = !showLogin'} Log In
 
 / - if @error
 /   %h3
 /     = @error
 
-.login
+.login.ng-drop{'ng-if' => 'showLogin'}
   = form_tag(action: 'create', method: 'post') do
     .input-group
       = label_tag :email, 'Email'
@@ -21,6 +21,7 @@
       = password_field_tag :password
 
     .actions
+      %button.cancel{'ng-click' => 'showLogin = !showLogin'} Cancel
       = submit_tag 'Login'
 
 .wrapper
