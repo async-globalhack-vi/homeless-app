@@ -30,8 +30,8 @@
           %td {{ triggeredEvent.zip }}
           %td.actions
             %button{'ng-click' => 'claim(triggeredEvent.id)', 'ng-if' => 'allShowing'}
-              Claim
+              Claim Event
             %button{'ng-click' => 'takeAction(triggeredEvent.id)', 'ng-if' => '!allShowing'}
-              Actions
+              Show Actions
 
   %event-action

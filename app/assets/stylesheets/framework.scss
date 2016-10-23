@@ -9,25 +9,37 @@ header {
     border-bottom: 1px solid #f2f3f4;
     box-shadow: 0 0 1rem 0.25rem rgba(0, 0, 0, 0.25);
 }
+.wrapper {
+    min-height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-image: url("hero1.jpg");
+    position: relative;
+    section {
+        background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .15)), to(rgba(0, 0, 0, .5))), -webkit-gradient(linear, left top, right bottom, color-stop(0, rgba(255, 255, 255, 0)), color-stop(0.5, rgba(255, 255, 255, .3)), color-stop(0.501, rgba(255, 255, 255, 0)), color-stop(1, rgba(255, 255, 255, 0)));
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+}
 section {
     padding: 2rem;
     padding-left: 3.5rem;
     &.first {
-        min-height: 70vh;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center right;
-        background-image: url("hero1.jpg");
         font-size: 1.25em;
         padding-top: 10%;
         color: #fff;
+        h2 {
+            font-size: 1.6em;
+            padding-bottom: 0.5rem;
+        }
         p {
-            width: 55%;
+            width: 48%;
             line-height: 1.5;
             text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
-            &.btn {
-                text-align: right;
-            }
         }
     }
     p {
