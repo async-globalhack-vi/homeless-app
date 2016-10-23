@@ -5,7 +5,7 @@ Geokit::default_formula = :sphere
 # This is the timeout value in seconds to be used for calls to the geocoder web
 # services.  For no timeout at all, comment out the setting.  The timeout unit
 # is in seconds.
-Geokit::Geocoders::request_timeout = 3
+Geokit::Geocoders::request_timeout = 5
 
 # This setting can be used if web service calls must be routed through a proxy.
 # These setting can be nil if not needed, otherwise, a valid URI must be
@@ -42,7 +42,7 @@ Geokit::Geocoders::GoogleGeocoder.api_key = ENV['GMAPS_API_KEY']
 # See http://geocoder.us
 # and http://geocoder.us/user/signup
 #Geokit::Geocoders::UsGeocoder.key = 'username:password'
-Geokit::Geocoders::UsGeocoder.key = nil
+# Geokit::Geocoders::UsGeocoder.key = nil
 
 # This is your authorization key for geocoder.ca.
 # To use the free service, the value can be set to nil or false.  For

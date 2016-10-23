@@ -436,16 +436,16 @@ AssistanceProvider.create!(
 #     max_monthly_contribution: "400",
 #     user_id: 44
 # )
-# AssistanceProvider.create!(
-#     name: "Joe Country's Church",
-#     email: "joe.country@example.com",
-#     street_address: "131 1st Street",
-#     city: "Rosebud",
-#     state: "MO",
-#     zip: "63091",
-#     max_monthly_contribution: "1000",
-#     user_id: 45
-# )
+AssistanceProvider.create!(
+    name: "Joe Country's Church",
+    email: "joe.country@example.com",
+    street_address: "131 1st Street",
+    city: "Rosebud",
+    state: "MO",
+    zip: "63091",
+    max_monthly_contribution: "1000",
+    user_id: 45
+)
 
 CareCoordinator.create!(
     name: "Matt A",
@@ -472,176 +472,176 @@ CareCoordinator.create!(
     email: "dave.a@example.com",
     user_id: 10
 )
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a11@example.com",
-    user_id: 11
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a12@example.com",
-    user_id: 12
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a13@example.com",
-    user_id: 13
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a14@example.com",
-    user_id: 14
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a15@example.com",
-    user_id: 15
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a16@example.com",
-    user_id: 16
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a17@example.com",
-    user_id: 17
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a18@example.com",
-    user_id: 18
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a19@example.com",
-    user_id: 19
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a20@example.com",
-    user_id: 20
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a21@example.com",
-    user_id: 21
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a22@example.com",
-    user_id: 22
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a23@example.com",
-    user_id: 23
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a24@example.com",
-    user_id: 24
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a25@example.com",
-    user_id: 25
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a26@example.com",
-    user_id: 26
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a27@example.com",
-    user_id: 27
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a28@example.com",
-    user_id: 28
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a29@example.com",
-    user_id: 29
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a30@example.com",
-    user_id: 30
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a31@example.com",
-    user_id: 31
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a32@example.com",
-    user_id: 32
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a33@example.com",
-    user_id: 33
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a34@example.com",
-    user_id: 34
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a35@example.com",
-    user_id: 35
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a36@example.com",
-    user_id: 36
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a37@example.com",
-    user_id: 37
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a38@example.com",
-    user_id: 38
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a39@example.com",
-    user_id: 39
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a40@example.com",
-    user_id: 40
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a41@example.com",
-    user_id: 41
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a42@example.com",
-    user_id: 42
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a43@example.com",
-    user_id: 43
-)
-CareCoordinator.create!(
-    name: "Matt A",
-    email: "matt.a44@example.com",
-    user_id: 44
-)
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a11@example.com",
+#     user_id: 11
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a12@example.com",
+#     user_id: 12
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a13@example.com",
+#     user_id: 13
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a14@example.com",
+#     user_id: 14
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a15@example.com",
+#     user_id: 15
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a16@example.com",
+#     user_id: 16
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a17@example.com",
+#     user_id: 17
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a18@example.com",
+#     user_id: 18
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a19@example.com",
+#     user_id: 19
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a20@example.com",
+#     user_id: 20
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a21@example.com",
+#     user_id: 21
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a22@example.com",
+#     user_id: 22
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a23@example.com",
+#     user_id: 23
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a24@example.com",
+#     user_id: 24
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a25@example.com",
+#     user_id: 25
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a26@example.com",
+#     user_id: 26
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a27@example.com",
+#     user_id: 27
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a28@example.com",
+#     user_id: 28
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a29@example.com",
+#     user_id: 29
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a30@example.com",
+#     user_id: 30
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a31@example.com",
+#     user_id: 31
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a32@example.com",
+#     user_id: 32
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a33@example.com",
+#     user_id: 33
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a34@example.com",
+#     user_id: 34
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a35@example.com",
+#     user_id: 35
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a36@example.com",
+#     user_id: 36
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a37@example.com",
+#     user_id: 37
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a38@example.com",
+#     user_id: 38
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a39@example.com",
+#     user_id: 39
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a40@example.com",
+#     user_id: 40
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a41@example.com",
+#     user_id: 41
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a42@example.com",
+#     user_id: 42
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a43@example.com",
+#     user_id: 43
+# )
+# CareCoordinator.create!(
+#     name: "Matt A",
+#     email: "matt.a44@example.com",
+#     user_id: 44
+# )
 
 Event.create!(
     date_of_event: "10/18/2016",
