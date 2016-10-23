@@ -49,5 +49,5 @@
       %p.btn
         = link_to 'Not this time...', reject_path(@qualified_need.id)
 
-  = bar_chart({"Funds Remaining" => @provider.available_monthly_contribution}, height:"200px", colors:['#08773b','#083d77'])
-  = bar_chart({"Max Request" => @provider.max_monthly_contribution}, height:"200px", colors:["grey"] )
+  = bar_chart({"Requestable Amount" => 700}, height:"200px", max: @provider.max_monthly_contribution)
+  = bar_chart({"Your Monthly Max" => @provider.max_monthly_contribution}, height:"200px", colors:['#083d77'])
