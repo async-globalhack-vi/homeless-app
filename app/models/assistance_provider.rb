@@ -25,6 +25,9 @@ class AssistanceProvider < ActiveRecord::Base
       puts "found"
     end
     qualified_need.save!
+
+    self.available_monthly_contribution = "0"
+    self.save
   end
 
   def address

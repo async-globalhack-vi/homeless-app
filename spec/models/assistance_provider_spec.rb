@@ -55,8 +55,8 @@ RSpec.describe AssistanceProvider, :type => :model do
         puts "about to reject"
         subject.reject(need)
       end
-      it 'leaves your available max amount the same' do
-        expect(subject.available_monthly_contribution.to_f).to be_within(0.01).of(1000.0)
+      it 'zeroes your available amount' do
+        expect(subject.available_monthly_contribution.to_f).to be_within(0.01).of(0.0)
       end
 
       it 'leaves your monthly max amount the same' do
