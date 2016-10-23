@@ -8,21 +8,24 @@
     %p
       = link_to 'Log Out', logout_path
 
-- if !@qualified_need
-  %h3 Good news!
-  %p
-    We have no immediate needs in your area at the moment, but as always, we will notify you when someone needs your help.
-- if @qualified_need
-  %section
-    %h2 Assistance Provider Dashboard
+%section
+  %h2.underline Assistance Provider Dashboard
 
-    %h3 Total need
-    = @qualified_need.total_needed
+  - if !@qualified_need
+    .jumbo
+      %p
+        We have no immediate needs in your area at the moment, but as always, we will notify you when someone needs your help.
 
-    %h4 Deadline
-    = @qualified_need.deadline
+  - if @qualified_need
+    .card
+      %h3
+      = @qualified_need.total_needed
 
-    %p
-      = link_to 'Pledge!', pledge_path(@qualified_need.id)
-    %p
-      = link_to 'Not this time...', reject_path(@qualified_need.id)
+      %h4 Deadline
+      = @qualified_need.deadline
+
+    .actions
+      %p.btn
+        = link_to 'Pledge!', pledge_path(@qualified_need.id)
+      %p.btn
+        = link_to 'Not this time...', reject_path(@qualified_need.id)

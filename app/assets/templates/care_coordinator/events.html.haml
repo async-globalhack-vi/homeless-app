@@ -5,9 +5,9 @@
     .tab{'ng-click' => 'showMine()', 'ng-class' => "{ 'active': !allShowing }"}
       %p My events
 
-  %div.jumbo{'ng-if' => 'triggeredEvents.length == 0 && allShowing'}
+  .jumbo{'ng-if' => 'triggeredEvents.length == 0 && allShowing'}
     %p No events are in the system.
-  %div.jumbo{'ng-if' => 'triggeredEvents.length == 0 && !allShowing'}
+  .jumbo{'ng-if' => 'triggeredEvents.length == 0 && !allShowing'}
     %p You have no claimed events.
 
   %div{'ng-if' => 'triggeredEvents && triggeredEvents.length > 0'}
