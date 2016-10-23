@@ -1,0 +1,38 @@
+<div class='ng-slide slider' ng-if='showForm'>
+  <div class='input-group'>
+    <label for='total_needed'>Total needed</label>
+    <input id='total_needed' ng-model='form.total_needed'>
+  </div>
+  <div class='input-group'>
+    <label for='poc_name'>Point of Contact</label>
+    <input id='poc_name' ng-model='form.point_of_contact'>
+  </div>
+  <div class='input-group'>
+    <label for='poc_phone'>Phone</label>
+    <input id='poc_phone' ng-model='form.phone'>
+  </div>
+  <div class='input-group'>
+    <label for='deadline'>Deadline</label>
+    <input id='deadline' ng-model='form.deadline'>
+  </div>
+  <div class='input-group'>
+    <label for='street_address'>Street address</label>
+    <input id='street_address' ng-model='form.street_address'>
+  </div>
+  <div class='input-group'>
+    <label for='city'>City</label>
+    <input id='city' ng-model='form.city'>
+  </div>
+  <div class='input-group'>
+    <label for='state'>State</label>
+    <input id='state' ng-model='form.state'>
+  </div>
+  <div class='input-group'>
+    <label for='zip'>Zip</label>
+    <input id='zip' ng-model='form.zip'>
+  </div>
+  <div class='actions'>
+    <button ng-click='submit()'>Submit</button>
+    <button ng-click='cancel()'>Cancel</button>
+  </div>
+</div>

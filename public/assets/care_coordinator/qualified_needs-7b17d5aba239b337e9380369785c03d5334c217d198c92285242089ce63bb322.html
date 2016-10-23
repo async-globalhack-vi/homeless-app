@@ -1,0 +1,26 @@
+<div class='qualified-needs'>
+  <button class='add-need' ng-click='addQualifiedNeed()'>Add qualified need</button>
+  <table ng-if='qualifiedNeeds &amp;&amp; qualifiedNeeds.length &gt; 0'>
+    <thead>
+      <th>Total needed</th>
+      <th>Point of Contact</th>
+      <th>Phone</th>
+      <th>Deadline</th>
+      <th>Street address</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Zip</th>
+    </thead>
+    <tr ng-repeat='qualifiedNeed in qualifiedNeeds'>
+      <td>{{ qualifiedNeed.total_needed }}</td>
+      <td>{{ qualifiedNeed.point_of_contact }}</td>
+      <td>{{ qualifiedNeed.phone }}</td>
+      <td>{{ qualifiedNeed.deadline }}</td>
+      <td>{{ qualifiedNeed.street_address }}</td>
+      <td>{{ qualifiedNeed.city }}</td>
+      <td>{{ qualifiedNeed.state }}</td>
+      <td>{{ qualifiedNeed.zip }}</td>
+    </tr>
+  </table>
+  <qualified-need-form></qualified-need-form>
+</div>
