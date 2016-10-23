@@ -4,7 +4,9 @@
   %nav.flex
     %p
       = current_user.email
-    = link_to 'Logout', logout_path
+    %span &#124;
+    %p
+      = link_to 'Log Out', logout_path
 
 - if !@qualified_need
   %h3 Good news!

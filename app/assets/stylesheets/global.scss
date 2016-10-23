@@ -19,6 +19,17 @@ nav {
         color: #bbb;
         margin: 0.25rem;
     }
+    p { // used on internal headers
+        transition: background-color 250ms ease-in-out;
+        font-size: 0.85em;
+        border-radius: 0.25rem;
+        background-color: #083d77;
+        padding: 0.5em 1em;
+        color: #fff;
+        &:hover {
+            background-color: lighten(#083d77, 15%);
+        }
+    }
 }
 h1, h2, h3, h4, h5, h6, th, label {
     font-family: 'Muli', sans-serif;

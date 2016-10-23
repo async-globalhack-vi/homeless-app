@@ -1,7 +1,7 @@
 .ng-slide.slider{'ng-if' => 'showForm' }
   .input-group
     %label{for: :total_needed} Total needed
-    %input{id: :total_needed, 'ng-model' => 'form.total_needed'}
+    %input{id: :total_needed, 'ng-model' => 'form.total_needed', :autofocus => 'autofocus'}
 
   .input-group
     %label{for: :poc_name} Point of Contact
