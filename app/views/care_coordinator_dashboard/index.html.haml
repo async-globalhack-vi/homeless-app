@@ -11,8 +11,7 @@
 %section
   %h2.underline Care Coordinator Dashboard
 
-  -#= geo_chart QualifiedNeed.group(:zip).count, library: {region: 'US', resolution: 'provinces', displayMode: "markers"}
-
+  = geo_chart AssistanceProvider.group(:zip).count, library: {region: 'US', resolution: 'provinces', displayMode: "markers"}
 
   -#= pie_chart({"Football" => 10, "Basketball" => 5})
 
@@ -23,3 +22,4 @@
   -#%event-map
 
   %care-coordinator
+
