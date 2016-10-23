@@ -84,9 +84,15 @@ button {
     color: #fff;
     &.cancel {
         background-color: #768;
+        &:hover {
+            background-color: lighten(#768, 15%);
+        }
     }
     &:hover {
-        background-color: lighten(#083d77, 10%);
+        background-color: lighten(#083d77, 15%);
+    }
+    &:focus {
+        outline: none;
     }
 }
 label {
