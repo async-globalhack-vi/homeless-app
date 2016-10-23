@@ -48,3 +48,6 @@
         = link_to 'Pledge!', pledge_path(@qualified_need.id)
       %p.btn
         = link_to 'Not this time...', reject_path(@qualified_need.id)
+
+  = bar_chart({"Remaining Funds" => @provider.available_monthly_contribution}, height:"200px", colors:['#08773b','#083d77'])
+  = bar_chart({"Month Max Request" => @provider.max_monthly_contribution}, height:"200px", colors:["grey"] )
