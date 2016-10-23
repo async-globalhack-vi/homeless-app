@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Dependencies
+* Ruby 2.3.1
+* MySQL
 
-Things you may want to cover:
+To seed the DB and launch the app:
+* make
 
-* Ruby version
+To run tests
+* make test
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
