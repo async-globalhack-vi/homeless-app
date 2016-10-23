@@ -11,10 +11,12 @@ header {
 }
 h2 {
     + form { // new user forms
-        max-width: 60%;
         display: block;
         margin: auto;
         paddimg-top: 2em;
+        @media (min-width: 900px) {
+            max-width: 60%;
+        }
         .actions {
             margin-top: 1em;
             float: right;
@@ -69,13 +71,21 @@ section {
         }
     }
     &.second {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 0% center;
+        padding-top: 4em;
+        padding-bottom: 4em;
+        @media (min-width: 1000px) {
+            background-image: url("hero2.png");
+        }
         h2 {
             font-size: 1.5em;
             padding-bottom: 0.5rem;
         }
         h2,
         p {
-            @media (min-width: 900px) {
+            @media (min-width: 1000px) {
                 float: right;
                 width: 60%;
             }

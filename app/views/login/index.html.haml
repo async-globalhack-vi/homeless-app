@@ -1,3 +1,8 @@
+
+/ - if @error
+/   %h3
+/     = @error
+
 %header.flex
   %h1.logo Ruby Slippers
 
@@ -13,23 +18,7 @@
       = link_to 'Register as an assistance provider', new_assistance_provider_path
 
 %section.second.cf
-  %h2.slab Another thing
-  %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  %h2.slab Join Our Team
+  %p Case workers, Care Coordinators and Health Agents use our system to connect people in need with local resources, donations, and hope. If you have recently joined our team, you can register here.
   %p.btn
     = link_to 'Register as a care coordinator', new_care_coordinator_path
-
-/ - if @error
-/   %h3
-/     = @error
-
-= form_tag(action: 'create', method: 'post') do
-  %div.login
-    %div
-      = label_tag :email, 'Email'
-      = text_field_tag :email
-
-    %div
-      = label_tag :password, 'Password'
-      = password_field_tag :password
-
-  = submit_tag 'Login'
