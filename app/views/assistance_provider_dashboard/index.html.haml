@@ -22,33 +22,33 @@
     .qualified-needs
       %table
         %thead
-          %tr
-            %th.type Qualified Need
-            %th Deadline
-            %th Point of Contact
-            %th Phone
-            %th Address
+          %th.type Qualified Need
+          %th Deadline
+          %th Point of Contact
+          %th Phone
+          %th Address
+          %th
+          %th
         %tbody
-          %tr
-            %td
-              = @qualified_need.total_needed
-            %td
-              = @qualified_need.deadline
-            %td
-              = @qualified_need.point_of_contact
-            %td
-              = @qualified_need.phone
-            %td
-              = @qualified_need.address
+          %td
+            = @qualified_need.total_needed
+          %td
+            = @qualified_need.deadline
+          %td
+            = @qualified_need.point_of_contact
+          %td
+            = @qualified_need.phone
+          %td
+            = @qualified_need.address
+          %td
+            %p.btn
+              = link_to 'Pledge!', pledge_path(@qualified_need.id)
+          %td
+            %p.btn.cancel
+              = link_to 'Not this time', reject_path(@qualified_need.id)
 
-    .notes
-      = @qualified_need.notes
-
-    .actions
-      %p.btn.cancel
-        = link_to 'Not this time', reject_path(@qualified_need.id)
-      %p.btn
-        = link_to 'Pledge!', pledge_path(@qualified_need.id)
+      .notes
+        = @qualified_need.notes
 
   - if @provider.successfully_funded_needs_count > 0
     %p
@@ -56,6 +56,7 @@
       %b
         = @provider.successfully_funded_needs_count
       stay out of homelessness!
-
+  %br
+  %br
   = bar_chart({"Requestable Amount" => @provider.available_monthly_contribution}, height:"200px", colors:['#08773b'], max: @provider.max_monthly_contribution)
   = bar_chart({"Your Monthly Max" => @provider.max_monthly_contribution}, height:"200px", colors:['#083d77'], max: @provider.max_monthly_contribution)
