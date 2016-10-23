@@ -662,7 +662,7 @@ Event.create!(
     notes: "Rent wasn't paid for 2 months. Kicking them out."
 )
 Event.create!(
-    date_of_event: "10/22/2016",
+    date_of_event: "10/21/2016",
     street_address: "9332 Crawford Avenue",
     city: "St. Louis",
     state: "MO",
