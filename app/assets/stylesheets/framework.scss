@@ -10,8 +10,8 @@ header {
     box-shadow: 0 0 1rem 0.25rem rgba(0, 0, 0, 0.25);
 }
 h2 {
-    + form {
-        width: 50%;
+    + form { // new user forms
+        max-width: 60%;
         display: block;
         margin: auto;
         paddimg-top: 2em;
@@ -55,20 +55,43 @@ section {
         color: #fff;
         h2 {
             font-size: 1.6em;
-            padding-bottom: 0.5rem;
+            padding-bottom: 0.75rem;
         }
         p {
             line-height: 1.5;
             text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
+            &:last-of-type {
+                margin-top: 5rem;
+            }
             @media (min-width: 900px) {
                 width: 48%;
             }
         }
     }
-    p {
-        &:first-of-type {
-            margin-bottom: 4rem;
+    &.second {
+        h2 {
+            font-size: 1.5em;
+            padding-bottom: 0.5rem;
         }
+        h2,
+        p {
+            @media (min-width: 900px) {
+                float: right;
+                width: 60%;
+            }
+        }
+        p {
+            line-height: 1.6;
+            &:last-of-type {
+                margin-top: 3rem;
+            }
+        }
+    }
+}
+.note {
+    margin-bottom: 0.5em;
+    + .note {
+        font-size: 1.4em;
     }
 }
 nav {
