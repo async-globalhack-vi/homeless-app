@@ -6,9 +6,13 @@ class AssistanceProviderDashboardController < ApplicationController
   end
 
   def reject
+    puts "reject... #{qualified_need.inspect}"
     qualified_need.user_id = nil
-    qualified_need.rejections << AssistanceProvider.find_by(user_id: current_user.id)
+    provider = AssistanceProvider.find_by(user_id: current_user.id)
+    puts "#{provider.inspect}"
+    qualified_need.rejections << provider.id
     qualified_need.save!
+    puts "#{qualified_need.inspect}."
   end
 
   def pledge
