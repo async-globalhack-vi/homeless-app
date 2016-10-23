@@ -46,6 +46,12 @@ User.create!(email: "matt.a43@example.com", password: "pass")
 User.create!(email: "matt.a44@example.com", password: "pass")
 User.create!(email: "joe.country@example.com", password: "pass")
 User.create!(email: "joseph.hainline+CLC@gmail.com", password: "pass")
+User.create!(email: "joseph.hainline+CA@gmail.com", password: "pass")
+User.create!(email: "joseph.hainline+NY@gmail.com", password: "pass")
+User.create!(email: "joseph.hainline+FL@gmail.com", password: "pass")
+User.create!(email: "joseph.hainline+UT@gmail.com", password: "pass")
+
+
 
 AssistanceProvider.create!(
     name: "Matt A",
@@ -454,12 +460,49 @@ AssistanceProvider.create!(
     city: "Augusta",
     state: "MO",
     zip: "63332",
-    max_monthly_contribution: "2000",
+    max_monthly_contribution: "1200",
     user_id: 46
 )
-
-
-
+AssistanceProvider.create!(
+    name: "Iglesia El Camino",
+    email: "joseph.hainline+CA@gmail.com",
+    street_address: "181 Via Zapata",
+    city: "San Clemente",
+    state: "CA",
+    zip: "92672",
+    max_monthly_contribution: "3000",
+    user_id: 47
+)
+AssistanceProvider.create!(
+    name: "St. Peter's Episcopal Church",
+    email: "joseph.hainline+CA@gmail.com",
+    street_address: "107 State St",
+    city: "Albany",
+    state: "NY",
+    zip: "12207",
+    max_monthly_contribution: "1500",
+    user_id: 48
+)
+AssistanceProvider.create!(
+    name: "Romanian Orthodox Church",
+    email: "joseph.hainline+FL@gmail.com",
+    street_address: "1809 Sheeler Avenue",
+    city: "Apopka",
+    state: "FL",
+    zip: "32703",
+    max_monthly_contribution: "1500",
+    user_id: 49
+)
+AssistanceProvider.create!(
+    name: "The Church of Jesus Christ of Latter-day Saints",
+    email: "joseph.hainline+FL@gmail.com",
+    street_address: "100 South Main Street",
+    city: "Orangeville",
+    state: "UT",
+    zip: "84537",
+    max_monthly_contribution: "1500",
+    user_id: 50
+)
 
 
 CareCoordinator.create!(
@@ -487,6 +530,8 @@ CareCoordinator.create!(
     email: "dave.a@example.com",
     user_id: 10
 )
+
+
 
 Event.create!(
     date_of_event: "10/18/2016",
@@ -540,5 +585,46 @@ Event.create!(
     state: "MO",
     zip: "63090",
     event_type: "Parent Incarcerated",
-    notes: "Two children. Father incarcerated, and mother unemployed. "
+    notes: "Two children. Father incarcerated, and mother unemployed."
 )
+Event.create!(
+    date_of_event: "10/17/2016",
+    street_address: "212 Calle De Anza",
+    city: "San Clemente",
+    state: "CA",
+    zip: "92672",
+    event_type: "Homeless Hotline Call",
+    notes: "Mother of a newborn baby reported she is unable to pay her bills, and needs food."
+)
+Event.create!(
+    date_of_event: "10/18/2016",
+    street_address: "290 Calle De Anza",
+    city: "San Clemente",
+    state: "CA",
+    zip: "92672",
+    event_type: "Crime Report - Domestic Violence Incident",
+    notes: "Mother of a newborn baby reported she is unable to pay her bills, and needs food."
+)
+Event.create!(
+    date_of_event: "10/19/2016",
+    street_address: "1309 Crawford Drive",
+    city: "Apopka",
+    state: "FL",
+    zip: "32703",
+    event_type: "Missing Person",
+    notes: "88 year old Mary Linda reported missing. Has severe dementia."
+)
+Event.create!(
+    date_of_event: "10/22/2016",
+    street_address: "199 West 200 South",
+    city: "Orangeville",
+    state: "UT",
+    zip: "84537",
+    event_type: "Homeless Hotline Call",
+    notes: "Veteran needing financial assistance for medical bill."
+)
+
+
+
+
+
