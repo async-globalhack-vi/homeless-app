@@ -18,8 +18,13 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
+#geolocation
 gem 'geokit'
 gem 'geokit-rails', '~> 2.2'
+
+#mapping
+gem 'gmaps4rails'
+gem 'underscore-rails'
 
 group :development, :test do
   gem 'byebug', platform: :mri

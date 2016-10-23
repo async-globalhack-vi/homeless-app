@@ -16,5 +16,7 @@
 //= require angular
 //= require angular-animate-1.5.8
 //= require angular-rails-templates
+//= require underscore
+//= require gmaps/google
 //= require_tree ../templates
 //= require_tree ./app

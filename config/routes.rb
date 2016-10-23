@@ -17,5 +17,7 @@ Rails.application.routes.draw do
 
   get '/care_coordinator_dashboard', to: 'care_coordinator_dashboard#index'
 
+  get '/map_data', to: 'map_data#index'
+
   root to: 'home#index'
 end
