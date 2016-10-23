@@ -15,7 +15,10 @@ class AssistanceProvider < ActiveRecord::Base
   end
 
   def reject(qualified_need)
-
+    qualified_need.user_id = nil
+    qualified_need.rejections << self
+    qualified_need.number_of_rejections += 1
+    qualified_need.save!
   end
 
   def address

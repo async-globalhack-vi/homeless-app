@@ -38,6 +38,32 @@ RSpec.describe AssistanceProvider, :type => :model do
       it 'leaves your monthly max amount the same' do
         expect(subject.max_monthly_contribution.to_f).to be_within(0.01).of(1000.0)
       end
+
+      it 'sets the need to funded' do
+        expect(need.funded).to be true
+      end
+    end
+
+    describe 'rejecting funding a need' do
+      let! (:subject) { FactoryGirl.create(:assistance_provider, max_monthly_contribution: "1000", available_monthly_contribution: "1000" ) }
+      let! (:need) { FactoryGirl.create(:qualified_need, total_needed: "300") }
+
+      before do
+        need.user_id = subject.user_id
+        need.save!
+        subject.reject(need)
+      end
+      it 'leaves your available max amount the same' do
+        expect(subject.available_monthly_contribution.to_f).to be_within(0.01).of(1000.0)
+      end
+
+      it 'leaves your monthly max amount the same' do
+        expect(subject.max_monthly_contribution.to_f).to be_within(0.01).of(1000.0)
+      end
+
+      it 'does not set the need to funded' do
+        expect(need.funded).to be false
+      end
     end
   end
 end
