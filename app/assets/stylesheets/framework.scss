@@ -82,6 +82,9 @@ button {
     background-color: #083d77;
     padding: 0.5em 1em;
     color: #fff;
+    &.cancel {
+        background-color: #768;
+    }
     &:hover {
         background-color: lighten(#083d77, 10%);
     }

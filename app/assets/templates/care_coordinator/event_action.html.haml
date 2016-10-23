@@ -28,7 +28,7 @@
     %textarea{'id' => 'notes_field', 'ng-model' => 'triggerEvent.notes'}
 
   .actions
-    %button{'ng-click' => 'cancelEventAction()'} Cancel
+    %button.cancel{'ng-click' => 'cancelEventAction()'} Cancel
     %button{'ng-click' => 'update()'} Update
     %button{'ng-click' => 'eventResolved()'} Event Resolved
     %button{'ng-click' => 'createQualifiedNeed()'} Qualify Need
